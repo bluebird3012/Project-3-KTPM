@@ -1,0 +1,8 @@
+﻿test_case_id,attempted_username,attempted_email,status,note
+TC-001-129,username129,f1_11240605b8f3_129@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-130,username130,f1_11240605b8f3_130@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-131,username131,f1_11240605b8f3_131@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-132,username132,f1_11240605b8f3_132@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-133,username133,f1_11240605b8f3_133@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-134,username134,f1_11240605b8f3_134@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-135,username135,f1_11240605b8f3_135@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation

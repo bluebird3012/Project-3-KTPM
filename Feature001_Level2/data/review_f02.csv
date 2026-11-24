@@ -1,0 +1,4 @@
+﻿test_case_id,review_note
+TC-001-034,Legacy database-error oracle and 121-character pre-submit check retained. Review against original specification; do not treat a DB error as inherently correct.
+TC-001-039,Katalon records 197 characters in both input and verifyValue; retained exactly. No user-picture section click recorded.
+TC-001-044,"Katalon expects all 101 characters before submit; retained, even if browser truncates."

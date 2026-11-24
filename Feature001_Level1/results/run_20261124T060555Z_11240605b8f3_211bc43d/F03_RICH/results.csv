@@ -1,0 +1,12 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-090,BVA,Description,11240605b8f3,PASS,4.340,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username090,f1_11240605b8f3_090@example.com,,
+TC-001-091,BVA,Description,11240605b8f3,PASS,3.983,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username091,f1_11240605b8f3_091@example.com,,
+TC-001-092,BVA,Description,11240605b8f3,PASS,4.182,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username092,f1_11240605b8f3_092@example.com,,
+TC-001-093,BVA,Description,11240605b8f3,PASS,3.787,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username093,f1_11240605b8f3_093@example.com,,
+TC-001-094,BVA,Description,11240605b8f3,PASS,3.520,field_error,regexp:.+,Maximum of 50000 characters,Original expects Description error; preserve even if server accepts input.,yes,no,username094,f1_11240605b8f3_094@example.com,,
+TC-001-136,ECP,Description,11240605b8f3,PASS,4.205,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",Katalon export lost bold/newline markup; Project #2 explicitly specifies bold “Kiểm thử Moodle” and new line. Reconstructed markup; original exported text retained in source_editor_value.,yes,no,username136,f1_11240605b8f3_136@example.com,,

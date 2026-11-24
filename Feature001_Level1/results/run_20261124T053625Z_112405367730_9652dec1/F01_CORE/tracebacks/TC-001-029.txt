@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/core/runner.py", line 38, in run_suite
+    actual = execute_case(browser, base_url, case, run_id, args.timeout)
+  File "/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/test_groups/test_core_fields.py", line 67, in run_case
+    verify_pre_submit(browser, json.loads(case["pre_submit_checks_json"] or "[]"))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/test_groups/test_core_fields.py", line 25, in verify_pre_submit
+    raise AssertionError(
+    ...<2 lines>...
+    )
+AssertionError: Pre-submit value mismatch for id=id_email: expected 101 chars, got 100 chars

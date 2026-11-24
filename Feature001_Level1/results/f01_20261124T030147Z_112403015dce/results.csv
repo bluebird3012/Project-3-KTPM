@@ -1,0 +1,72 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-001,BVA,Username,112403015dce,PASS,3.903,field_error,Required,Required,,yes,no,,f1_112403015dce_001@example.com,,
+TC-001-002,BVA,Username,112403015dce,PASS,4.387,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,w,f1_112403015dce_002@example.com,,
+TC-001-003,BVA,Username,112403015dce,PASS,4.102,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,vy,f1_112403015dce_003@example.com,,
+TC-001-004,BVA,Username,112403015dce,PASS,3.694,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username004_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,f1_112403015dce_004@example.com,,
+TC-001-005,BVA,Username,112403015dce,PASS,3.991,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username005_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,f1_112403015dce_005@example.com,,
+TC-001-006,BVA,Username,112403015dce,SKIP,0.000,system_error,Error writing to database,Original Katalon has no Create user submit; pass --repair-missing-submit only after review,MISSING_SUBMIT_IN_SOURCE;LEGACY_EXPECTS_DATABASE_ERROR,no,no,,,,
+TC-001-007,BVA,New password,112403015dce,PASS,3.661,field_error,Required,Required,,yes,no,username007,f1_112403015dce_007@example.com,,
+TC-001-008,BVA,New password,112403015dce,PASS,3.460,field_error,regexp:.+,Required,,yes,no,username0000008,f1_112403015dce_008@example.com,,
+TC-001-009,BVA,New password,112403015dce,PASS,4.097,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username009,f1_112403015dce_009@example.com,,
+TC-001-010,BVA,New password,112403015dce,PASS,3.834,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username010,f1_112403015dce_010@example.com,,
+TC-001-011,BVA,New password,112403015dce,PASS,3.821,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username011,f1_112403015dce_011@example.com,,
+TC-001-012,BVA,New password,112403015dce,PASS,3.736,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username012,f1_112403015dce_012@example.com,,
+TC-001-013,BVA,New password,112403015dce,FAIL,2.105,field_error,Maximum of 128 characters,"AssertionError: Pre-submit value mismatch for id=id_newpassword: expected 129 chars, got 128 chars",SOURCE_ERROR_LOCATOR_NORMALIZED,yes,no,username013,f1_112403015dce_013@example.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-013.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-013.txt
+TC-001-014,BVA,First name,112403015dce,PASS,2.708,field_error,Missing given name,Missing given name,,yes,no,username014,f1_112403015dce_014@example.com,,
+TC-001-015,BVA,First name,112403015dce,PASS,3.945,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username0151,f1_112403015dce_015@example.com,,
+TC-001-016,BVA,First name,112403015dce,PASS,3.862,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username016,f1_112403015dce_016@example.com,,
+TC-001-017,BVA,First name,112403015dce,PASS,3.987,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username017,f1_112403015dce_017@example.com,,
+TC-001-018,BVA,First name,112403015dce,PASS,4.229,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username018,f1_112403015dce_018@example.com,,
+TC-001-019,BVA,First name,112403015dce,FAIL,2.226,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_firstname: expected 101 chars, got 100 chars",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0019,f1_112403015dce_019@example.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-019.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-019.txt
+TC-001-020,BVA,Surname,112403015dce,PASS,2.861,field_error,regexp:.+,Missing last name,,yes,no,username020,f1_112403015dce_020@example.com,,
+TC-001-021,BVA,Surname,112403015dce,PASS,3.918,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username0021,f1_112403015dce_021@example.com,,
+TC-001-022,BVA,Surname,112403015dce,PASS,4.021,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username022,f1_112403015dce_022@example.com,,
+TC-001-023,BVA,Surname,112403015dce,PASS,4.611,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username023,f1_112403015dce_023@example.com,,
+TC-001-024,BVA,Surname,112403015dce,PASS,4.200,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username024,f1_112403015dce_024@example.com,,
+TC-001-025,BVA,Surname,112403015dce,FAIL,1.945,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_lastname: expected 101 chars, got 100 chars",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0205,f1_112403015dce_025@example.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-025.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-025.txt
+TC-001-026,BVA,Email address,112403015dce,PASS,3.152,field_error,regexp:.+,Required,,yes,no,username026,,,
+TC-001-027,BVA,Email address,112403015dce,PASS,3.972,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username027,f1.027aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,,
+TC-001-028,BVA,Email address,112403015dce,PASS,4.531,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username028,f1.028aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,,
+TC-001-029,BVA,Email address,112403015dce,FAIL,1.731,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_email: expected 101 chars, got 100 chars",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0209,f1.029aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-029.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-029.txt
+TC-001-104,ECP,Username,112403015dce,PASS,4.238,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username104.a-b_c@9,f1_112403015dce_104@example.com,,
+TC-001-105,ECP,Username,112403015dce,PASS,3.962,field_error,regexp:.+,Only lowercase letters allowed,,yes,no,Username105,f1_112403015dce_105@example.com,,
+TC-001-106,ECP,Username,112403015dce,PASS,4.523,field_error,regexp:.+,"The username can only contain alphanumeric lowercase characters (letters and numbers), underscore (_), hyphen (-), period (.) or at symbol (@).",,yes,no,username 106,f1_112403015dce_106@example.com,,
+TC-001-107,ECP,Username,112403015dce,PASS,4.070,field_error,regexp:.+,"The username can only contain alphanumeric lowercase characters (letters and numbers), underscore (_), hyphen (-), period (.) or at symbol (@).",,yes,no,username107đạt,f1_112403015dce_107@example.com,,
+TC-001-109,ECP,Username,112403015dce,PASS,3.831,field_error,Required,Required,,yes,no,,f1_112403015dce_109@example.com,,
+TC-001-110,ECP,Username,112403015dce,PASS,4.596,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username110,f1_112403015dce_110@example.com,,
+TC-001-111,ECP,New password,112403015dce,FAIL,19.665,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username111,f1_112403015dce_111@example.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-111.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-111.txt
+TC-001-112,ECP,New password,112403015dce,FAIL,19.605,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username112,f1_112403015dce_112@example.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-112.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-112.txt
+TC-001-113,ECP,New password,112403015dce,FAIL,19.401,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username113,f1_112403015dce_113@example.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-113.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-113.txt
+TC-001-114,ECP,New password,112403015dce,FAIL,19.946,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username114,f1_112403015dce_114@example.com,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/screenshots/TC-001-114.png,/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/results/f01_20261124T030147Z_112403015dce/tracebacks/TC-001-114.txt
+TC-001-115,ECP,First name,112403015dce,PASS,4.127,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username115,f1_112403015dce_115@example.com,,
+TC-001-116,ECP,First name,112403015dce,PASS,2.858,field_error,Missing given name,Missing given name,,yes,no,username116,f1_112403015dce_116@example.com,,
+TC-001-117,ECP,Surname,112403015dce,PASS,3.893,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username117,f1_112403015dce_117@example.com,,
+TC-001-118,ECP,Surname,112403015dce,PASS,2.875,field_error,regexp:.+,Missing last name,,yes,no,username118,f1_112403015dce_118@example.com,,
+TC-001-119,ECP,Email address,112403015dce,PASS,3.756,field_error,regexp:.+,Invalid email address,,yes,no,username119,f1mail.example.com,,
+TC-001-120,ECP,Email address,112403015dce,PASS,3.868,field_error,regexp:.+,Invalid email address,,yes,no,username120,f1@,,
+TC-001-121,ECP,Email address,112403015dce,SKIP,0.000,field_error,regexp:.+,Requires existing f1_existing@example.com account; use --include-fixtures after seeding,DUPLICATE_EMAIL_FIXTURE_REQUIRED,yes,yes,,,,
+TC-001-122,ECP,Email address,112403015dce,SKIP,0.000,field_error,regexp:.+,Requires existing f1_existing@example.com account; use --include-fixtures after seeding,DUPLICATE_EMAIL_FIXTURE_REQUIRED,yes,yes,,,,
+TC-001-123,ECP,Email address,112403015dce,PASS,4.147,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username123,f1_trim_email@example.com,,

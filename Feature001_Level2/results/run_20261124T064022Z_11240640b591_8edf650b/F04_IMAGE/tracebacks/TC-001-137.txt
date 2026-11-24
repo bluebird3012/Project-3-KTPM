@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/dattran/PythonProjects/Project3/Feature001_Level2/core/runner.py", line 38, in run_suite
+    actual = execute_case(browser, base_url, case, run_id, args.timeout)
+  File "/home/dattran/PythonProjects/Project3/Feature001_Level2/test_groups/remaining.py", line 107, in run_image
+    upload_note = picker.upload(image_path(case['file_name']), expect_rejection=case['expected_file_count'] == '0')
+  File "/home/dattran/PythonProjects/Project3/Feature001_Level2/pages/picture_picker.py", line 152, in upload
+    self.click_upload(before, path)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Project3/Feature001_Level2/pages/picture_picker.py", line 115, in click_upload
+    self.wait().until(attempt, message=f'Could not click Upload this file for {path.name}')
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Project3/Feature001_Level2/.venv/lib/python3.14/site-packages/selenium/webdriver/support/wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Could not click Upload this file for f1_avatar.jpg
+

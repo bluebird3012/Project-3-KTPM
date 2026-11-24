@@ -1,0 +1,17 @@
+﻿test_case_id,technique,focus,authentication,username,first_name,last_name,email,new_password,password_entry,first_name_entry,last_name_entry,pre_submit_checks_json,expected_kind,expected_target,expected_text,source_has_submit,fixture_required,review_tags,katalon_step_count,final_authentication,flags_json
+TC-001-124,ECP,Account options,manual,username124,An,Nguyen,f1_{run_id}_124@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,nologin,[]
+TC-001-125,ECP,Account options,manual,username125,An,Nguyen,f1_{run_id}_125@example.com,,omit,type,type,[],field_error,password_error,regexp:.+,yes,no,Password error with nologin may conflict with Moodle behavior; preserve.,12,nologin,[]
+TC-001-126,ECP,Account options,manual,username126,An,Nguyen,f1_{run_id}_126@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,manual,"[""suspended""]"
+TC-001-127,ECP,Account options,manual,username127,An,Nguyen,f1_{run_id}_127@example.com,,omit,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,13,manual,"[""generate_password""]"
+TC-001-128,ECP,Account options,manual,username128,An,Nguyen,f1_{run_id}_128@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,manual,"[""force_password_change""]"
+TC-001-146,DT,Account options,manual,username146,An,Nguyen,f1_{run_id}_146@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,14,manual,[]
+TC-001-147,DT,Account options,manual,username147,An,Nguyen,f1_{run_id}_147@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,manual,"[""suspended""]"
+TC-001-148,DT,Account options,manual,username148,An,Nguyen,f1_{run_id}_148@example.com,,omit,type,type,[],field_error,password_error,regexp:.+,yes,no,,11,manual,[]
+TC-001-149,DT,Account options,manual,username149,An,Nguyen,f1_{run_id}_149@example.com,,omit,type,type,[],field_error,password_error,regexp:.+,yes,no,,12,manual,"[""suspended""]"
+TC-001-150,DT,Account options,manual,username150,An,Nguyen,f1_{run_id}_150@example.com,aa1!bcde,type,type,type,[],field_error,password_error,regexp:.+,yes,no,Weak password oracle may conflict with disabled Password Policy.,13,manual,[]
+TC-001-151,DT,Account options,manual,username151,An,Nguyen,f1_{run_id}_151@example.com,aa1!bcde,type,type,type,[],field_error,password_error,regexp:.+,yes,no,Weak password oracle may conflict with disabled Password Policy.,14,manual,"[""suspended""]"
+TC-001-152,DT,Account options,manual,username152,An,Nguyen,f1_{run_id}_152@example.com,,omit,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,13,manual,"[""generate_password""]"
+TC-001-153,DT,Account options,manual,username153,An,Nguyen,f1_{run_id}_153@example.com,,omit,type,type,[],field_error,suspended_error,regexp:.+,yes,no,,13,manual,"[""suspended"", ""generate_password""]"
+TC-001-154,UC,Account options,manual,username154,An,Nguyen,f1_{run_id}_154@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,14,manual,[]
+TC-001-155,UC,Account options,manual,username155,An,Nguyen,f1_{run_id}_155@example.com,,omit,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,13,manual,"[""generate_password""]"
+TC-001-156,UC,Account options,manual,username156,An,Nguyen,f1_{run_id}_156@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,manual,"[""suspended""]"

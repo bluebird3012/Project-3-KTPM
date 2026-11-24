@@ -1,0 +1,2 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-108,ECP,Duplicate username,112405367730,PASS,8.352,field_error,"This username already exists, choose another","This username already exists, choose another",Dynamic duplicate username and distinct second email preserved; run_id replaces recorded draft IDs.,yes,no,username108_112405367730,f1_112405367730_108@example.com,,

@@ -1,0 +1,57 @@
+Traceback (most recent call last):
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/test_core_fields.py", line 262, in click_visible
+    element.click()
+    ~~~~~~~~~~~~~^^
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/.venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 117, in click
+    self._execute(Command.CLICK_ELEMENT)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/.venv/lib/python3.14/site-packages/selenium/webdriver/remote/webelement.py", line 532, in _execute
+    return self._parent.execute(command, params)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/.venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 569, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/.venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 234, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (561, 2178)
+  (Session info: chrome=157.0.8103.38); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+#0 0x58003961fcaa <unknown>
+#1 0x580038f53cc5 <unknown>
+#2 0x580038f9e8b1 <unknown>
+#3 0x580038f9d29e <unknown>
+#4 0x580038f9b636 <unknown>
+#5 0x580038f9aefa <unknown>
+#6 0x580038f91433 <unknown>
+#7 0x580038f90f13 <unknown>
+#8 0x580038f90eb9 <unknown>
+#9 0x580038fd5db3 <unknown>
+#10 0x580038fd56c1 <unknown>
+#11 0x580038f90557 <unknown>
+#12 0x580038f8f86e <unknown>
+#13 0x580038f90341 <unknown>
+#14 0x5800395e279c <unknown>
+#15 0x5800395e0fcd <unknown>
+#16 0x5800395cbdf5 <unknown>
+#17 0x5800395e1c0a <unknown>
+#18 0x5800395b4b99 <unknown>
+#19 0x58003960a318 <unknown>
+#20 0x58003960a4b5 <unknown>
+#21 0x58003961e633 <unknown>
+#22 0x72732cca3dba <unknown>
+#23 0x72732cd3758c <unknown>
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/test_core_fields.py", line 466, in main
+    actual = run_case(browser, base_url, case, run_id, args.timeout)
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/test_core_fields.py", line 371, in run_case
+    click_visible(browser, By.ID, "id_submitbutton", timeout, "Create user")
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/test_core_fields.py", line 289, in click_visible
+    raise RuntimeError(
+    ...<2 lines>...
+    ) from last_error
+RuntimeError: Cannot click Create user (id=id_submitbutton) after 3 scroll alignments. Element/overlay diagnostic: {'center': [562, 831], 'covered': True, 'elementAtCenter': '<select class="form-select\n                       \n                       " name="maildisplay" id="id_maildisplay">\n            <option value="0">Hidden</option>\n            <option value="1">Visible to everyone</option>\n            <option value="2" selected="">Visible to course participants</option>\n        </select>', 'target': 'INPUT#id_submitbutton', 'viewport': [1416, 832]}

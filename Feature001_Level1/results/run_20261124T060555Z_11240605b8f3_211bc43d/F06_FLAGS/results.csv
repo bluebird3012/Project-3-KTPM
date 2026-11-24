@@ -1,0 +1,27 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-124,ECP,Account options,11240605b8f3,PASS,4.609,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username124,f1_11240605b8f3_124@example.com,,
+TC-001-125,ECP,Account options,11240605b8f3,PASS,3.799,field_error,regexp:.+,Required,Password error with nologin may conflict with Moodle behavior; preserve.,yes,no,username125,f1_11240605b8f3_125@example.com,,
+TC-001-126,ECP,Account options,11240605b8f3,PASS,3.792,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username126,f1_11240605b8f3_126@example.com,,
+TC-001-127,ECP,Account options,11240605b8f3,PASS,3.085,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username127,f1_11240605b8f3_127@example.com,,
+TC-001-128,ECP,Account options,11240605b8f3,PASS,4.348,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username128,f1_11240605b8f3_128@example.com,,
+TC-001-146,DT,Account options,11240605b8f3,PASS,4.061,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username146,f1_11240605b8f3_146@example.com,,
+TC-001-147,DT,Account options,11240605b8f3,ERROR,16.988,success,regexp:.*Changes saved.*,"TimeoutException: Message: 
+",,yes,no,username147,f1_11240605b8f3_147@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F06_FLAGS/screenshots/TC-001-147.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F06_FLAGS/tracebacks/TC-001-147.txt
+TC-001-148,DT,Account options,11240605b8f3,PASS,3.636,field_error,regexp:.+,Required,,yes,no,username148,f1_11240605b8f3_148@example.com,,
+TC-001-149,DT,Account options,11240605b8f3,PASS,3.477,field_error,regexp:.+,Required,,yes,no,username149,f1_11240605b8f3_149@example.com,,
+TC-001-150,DT,Account options,11240605b8f3,FAIL,17.884,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",Weak password oracle may conflict with disabled Password Policy.,yes,no,username150,f1_11240605b8f3_150@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F06_FLAGS/screenshots/TC-001-150.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F06_FLAGS/tracebacks/TC-001-150.txt
+TC-001-151,DT,Account options,11240605b8f3,FAIL,18.197,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",Weak password oracle may conflict with disabled Password Policy.,yes,no,username151,f1_11240605b8f3_151@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F06_FLAGS/screenshots/TC-001-151.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F06_FLAGS/tracebacks/TC-001-151.txt
+TC-001-152,DT,Account options,11240605b8f3,PASS,2.719,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username152,f1_11240605b8f3_152@example.com,,
+TC-001-153,DT,Account options,11240605b8f3,PASS,3.247,field_error,regexp:.+,Error,,yes,no,username153,f1_11240605b8f3_153@example.com,,
+TC-001-154,UC,Account options,11240605b8f3,PASS,3.651,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username154,f1_11240605b8f3_154@example.com,,
+TC-001-155,UC,Account options,11240605b8f3,PASS,3.125,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username155,f1_11240605b8f3_155@example.com,,
+TC-001-156,UC,Account options,11240605b8f3,PASS,3.199,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username156,f1_11240605b8f3_156@example.com,,

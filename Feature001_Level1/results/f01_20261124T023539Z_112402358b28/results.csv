@@ -1,0 +1,3 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-002,BVA,Username,112402358b28,PASS,4.303,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,w,f1_112402358b28_002@example.com,,

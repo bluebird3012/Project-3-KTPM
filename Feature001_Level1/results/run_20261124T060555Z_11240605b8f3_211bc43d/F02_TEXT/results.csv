@@ -1,0 +1,126 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-030,BVA,City/town,11240605b8f3,PASS,4.376,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username030,f1_11240605b8f3_030@example.com,,
+TC-001-031,BVA,City/town,11240605b8f3,PASS,3.270,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username031,f1_11240605b8f3_031@example.com,,
+TC-001-032,BVA,City/town,11240605b8f3,PASS,4.002,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username032,f1_11240605b8f3_032@example.com,,
+TC-001-033,BVA,City/town,11240605b8f3,PASS,3.676,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username033,f1_11240605b8f3_033@example.com,,
+TC-001-034,BVA,City/town,11240605b8f3,FAIL,2.037,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_city: expected 121 chars, got 120 chars",legacy_database_error,yes,no,username034,f1_11240605b8f3_034@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F02_TEXT/screenshots/TC-001-034.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F02_TEXT/tracebacks/TC-001-034.txt
+TC-001-035,BVA,Picture description,11240605b8f3,PASS,3.299,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username035,f1_11240605b8f3_035@example.com,,
+TC-001-036,BVA,Picture description,11240605b8f3,PASS,3.812,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username036,f1_11240605b8f3_036@example.com,,
+TC-001-037,BVA,Picture description,11240605b8f3,PASS,3.676,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username037,f1_11240605b8f3_037@example.com,,
+TC-001-038,BVA,Picture description,11240605b8f3,PASS,3.247,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username038,f1_11240605b8f3_038@example.com,,
+TC-001-039,BVA,Picture description,11240605b8f3,FAIL,1.565,success,regexp:.*Changes saved.*,"AssertionError: Pre-submit value mismatch for id=id_imagealt: expected 197 chars, got 100 chars",source_length_197,yes,no,username00039,f1_11240605b8f3_039@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F02_TEXT/screenshots/TC-001-039.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F02_TEXT/tracebacks/TC-001-039.txt
+TC-001-040,BVA,First name - phonetic,11240605b8f3,PASS,4.900,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username040,f1_11240605b8f3_040@example.com,,
+TC-001-041,BVA,First name - phonetic,11240605b8f3,PASS,5.369,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username041,f1_11240605b8f3_041@example.com,,
+TC-001-042,BVA,First name - phonetic,11240605b8f3,PASS,5.304,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username042,f1_11240605b8f3_042@example.com,,
+TC-001-043,BVA,First name - phonetic,11240605b8f3,PASS,4.758,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username043,f1_11240605b8f3_043@example.com,,
+TC-001-044,BVA,First name - phonetic,11240605b8f3,FAIL,3.074,success,regexp:.*Changes saved.*,"AssertionError: Pre-submit value mismatch for id=id_firstnamephonetic: expected 101 chars, got 100 chars",source_full_length_check,yes,no,username044,f1_11240605b8f3_044@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F02_TEXT/screenshots/TC-001-044.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F02_TEXT/tracebacks/TC-001-044.txt
+TC-001-045,BVA,Surname - phonetic,11240605b8f3,PASS,5.423,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username045,f1_11240605b8f3_045@example.com,,
+TC-001-046,BVA,Surname - phonetic,11240605b8f3,PASS,5.246,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username046,f1_11240605b8f3_046@example.com,,
+TC-001-047,BVA,Surname - phonetic,11240605b8f3,PASS,5.538,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username047,f1_11240605b8f3_047@example.com,,
+TC-001-048,BVA,Surname - phonetic,11240605b8f3,PASS,5.222,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username048,f1_11240605b8f3_048@example.com,,
+TC-001-049,BVA,Surname - phonetic,11240605b8f3,PASS,5.464,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username049,f1_11240605b8f3_049@example.com,,
+TC-001-050,BVA,Middle name,11240605b8f3,PASS,4.579,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username050,f1_11240605b8f3_050@example.com,,
+TC-001-051,BVA,Middle name,11240605b8f3,PASS,5.713,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username051,f1_11240605b8f3_051@example.com,,
+TC-001-052,BVA,Middle name,11240605b8f3,PASS,5.861,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username052,f1_11240605b8f3_052@example.com,,
+TC-001-053,BVA,Middle name,11240605b8f3,PASS,5.654,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username053,f1_11240605b8f3_053@example.com,,
+TC-001-054,BVA,Middle name,11240605b8f3,PASS,5.850,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username054,f1_11240605b8f3_054@example.com,,
+TC-001-055,BVA,Alternate name,11240605b8f3,PASS,5.364,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username055,f1_11240605b8f3_055@example.com,,
+TC-001-056,BVA,Alternate name,11240605b8f3,PASS,4.968,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username056,f1_11240605b8f3_056@example.com,,
+TC-001-057,BVA,Alternate name,11240605b8f3,PASS,5.265,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username057,f1_11240605b8f3_057@example.com,,
+TC-001-058,BVA,Alternate name,11240605b8f3,PASS,5.367,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username058,f1_11240605b8f3_058@example.com,,
+TC-001-059,BVA,Alternate name,11240605b8f3,PASS,5.824,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username059,f1_11240605b8f3_059@example.com,,
+TC-001-060,BVA,ID number,11240605b8f3,PASS,6.776,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username060,f1_11240605b8f3_060@example.com,,
+TC-001-061,BVA,ID number,11240605b8f3,PASS,6.088,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username061,f1_11240605b8f3_061@example.com,,
+TC-001-062,BVA,ID number,11240605b8f3,PASS,7.746,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username062,f1_11240605b8f3_062@example.com,,
+TC-001-063,BVA,ID number,11240605b8f3,PASS,6.603,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username063,f1_11240605b8f3_063@example.com,,
+TC-001-064,BVA,ID number,11240605b8f3,PASS,6.392,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username064,f1_11240605b8f3_064@example.com,,
+TC-001-065,BVA,Institution,11240605b8f3,PASS,6.572,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username065,f1_11240605b8f3_065@example.com,,
+TC-001-066,BVA,Institution,11240605b8f3,PASS,5.962,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username066,f1_11240605b8f3_066@example.com,,
+TC-001-067,BVA,Institution,11240605b8f3,PASS,6.189,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username067,f1_11240605b8f3_067@example.com,,
+TC-001-068,BVA,Institution,11240605b8f3,PASS,6.046,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username068,f1_11240605b8f3_068@example.com,,
+TC-001-069,BVA,Institution,11240605b8f3,PASS,5.628,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username069,f1_11240605b8f3_069@example.com,,
+TC-001-070,BVA,Department,11240605b8f3,PASS,5.828,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username070,f1_11240605b8f3_070@example.com,,
+TC-001-071,BVA,Department,11240605b8f3,PASS,5.294,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username071,f1_11240605b8f3_071@example.com,,
+TC-001-072,BVA,Department,11240605b8f3,PASS,5.710,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username072,f1_11240605b8f3_072@example.com,,
+TC-001-073,BVA,Department,11240605b8f3,PASS,6.476,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username073,f1_11240605b8f3_073@example.com,,
+TC-001-074,BVA,Department,11240605b8f3,PASS,6.165,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username074,f1_11240605b8f3_074@example.com,,
+TC-001-075,BVA,Address,11240605b8f3,PASS,5.520,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username075,f1_11240605b8f3_075@example.com,,
+TC-001-076,BVA,Address,11240605b8f3,PASS,5.449,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username076,f1_11240605b8f3_076@example.com,,
+TC-001-077,BVA,Address,11240605b8f3,PASS,5.625,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username077,f1_11240605b8f3_077@example.com,,
+TC-001-078,BVA,Address,11240605b8f3,PASS,5.965,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username078,f1_11240605b8f3_078@example.com,,
+TC-001-079,BVA,Address,11240605b8f3,PASS,6.101,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username079,f1_11240605b8f3_079@example.com,,
+TC-001-080,BVA,Phone,11240605b8f3,PASS,5.853,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username080,f1_11240605b8f3_080@example.com,,
+TC-001-081,BVA,Phone,11240605b8f3,PASS,5.697,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username081,f1_11240605b8f3_081@example.com,,
+TC-001-082,BVA,Phone,11240605b8f3,PASS,5.720,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username082,f1_11240605b8f3_082@example.com,,
+TC-001-083,BVA,Phone,11240605b8f3,PASS,5.767,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username083,f1_11240605b8f3_083@example.com,,
+TC-001-084,BVA,Phone,11240605b8f3,PASS,5.431,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username084,f1_11240605b8f3_084@example.com,,
+TC-001-085,BVA,Mobile phone,11240605b8f3,PASS,5.539,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username085,f1_11240605b8f3_085@example.com,,
+TC-001-086,BVA,Mobile phone,11240605b8f3,PASS,5.930,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username086,f1_11240605b8f3_086@example.com,,
+TC-001-087,BVA,Mobile phone,11240605b8f3,PASS,6.212,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username087,f1_11240605b8f3_087@example.com,,
+TC-001-088,BVA,Mobile phone,11240605b8f3,PASS,5.345,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username088,f1_11240605b8f3_088@example.com,,
+TC-001-089,BVA,Mobile phone,11240605b8f3,PASS,5.577,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username089,f1_11240605b8f3_089@example.com,,
+TC-001-142,ECP,Phone,11240605b8f3,PASS,5.522,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username142,f1_11240605b8f3_142@example.com,,
+TC-001-143,ECP,Mobile phone,11240605b8f3,PASS,5.287,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username143,f1_11240605b8f3_143@example.com,,
+TC-001-144,ECP,ID number,11240605b8f3,PASS,5.109,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username144,f1_11240605b8f3_144@example.com,,
+TC-001-145,ECP,City/town,11240605b8f3,PASS,3.719,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username145,f1_11240605b8f3_145@example.com,,

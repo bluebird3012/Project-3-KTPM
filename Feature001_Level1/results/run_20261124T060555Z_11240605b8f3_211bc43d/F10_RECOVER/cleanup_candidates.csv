@@ -1,0 +1,3 @@
+﻿test_case_id,attempted_username,attempted_email,status,note
+TC-001-158,username158_11240605b8f3,f1_11240605b8f3_158@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-158,username158,username158_duplicate_11240605b8f3@example.com,PASS,Recovery candidate; verify exact account before deleting

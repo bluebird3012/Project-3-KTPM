@@ -1,0 +1,72 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-001,BVA,Username,11240605b8f3,PASS,4.047,field_error,Required,Required,,yes,no,,f1_11240605b8f3_001@example.com,,
+TC-001-002,BVA,Username,11240605b8f3,PASS,4.809,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,w,f1_11240605b8f3_002@example.com,,
+TC-001-003,BVA,Username,11240605b8f3,PASS,3.913,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,vy,f1_11240605b8f3_003@example.com,,
+TC-001-004,BVA,Username,11240605b8f3,PASS,3.890,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username004_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,f1_11240605b8f3_004@example.com,,
+TC-001-005,BVA,Username,11240605b8f3,PASS,3.703,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username005_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,f1_11240605b8f3_005@example.com,,
+TC-001-006,BVA,Username,11240605b8f3,SKIP,0.000,system_error,Error writing to database,Original Katalon has no Create user submit; pass --repair-missing-submit only after review,MISSING_SUBMIT_IN_SOURCE;LEGACY_EXPECTS_DATABASE_ERROR,no,no,,,,
+TC-001-007,BVA,New password,11240605b8f3,PASS,3.189,field_error,Required,Required,,yes,no,username007,f1_11240605b8f3_007@example.com,,
+TC-001-008,BVA,New password,11240605b8f3,PASS,3.526,field_error,regexp:.+,Required,,yes,no,username0000008,f1_11240605b8f3_008@example.com,,
+TC-001-009,BVA,New password,11240605b8f3,PASS,4.125,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username009,f1_11240605b8f3_009@example.com,,
+TC-001-010,BVA,New password,11240605b8f3,PASS,3.748,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username010,f1_11240605b8f3_010@example.com,,
+TC-001-011,BVA,New password,11240605b8f3,PASS,3.931,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username011,f1_11240605b8f3_011@example.com,,
+TC-001-012,BVA,New password,11240605b8f3,PASS,3.837,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username012,f1_11240605b8f3_012@example.com,,
+TC-001-013,BVA,New password,11240605b8f3,FAIL,18.115,success,regexp:.*Changes saved.*,"AssertionError: success not matched. Locator=css=div.alert-success[role='alert'], expected='regexp:.*Changes saved.*', last observed=''",SOURCE_ERROR_LOCATOR_NORMALIZED,yes,no,username013,f1_11240605b8f3_013@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-013.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-013.txt
+TC-001-014,BVA,First name,11240605b8f3,PASS,2.613,field_error,Missing given name,Missing given name,,yes,no,username014,f1_11240605b8f3_014@example.com,,
+TC-001-015,BVA,First name,11240605b8f3,PASS,3.336,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username0151,f1_11240605b8f3_015@example.com,,
+TC-001-016,BVA,First name,11240605b8f3,PASS,3.513,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username016,f1_11240605b8f3_016@example.com,,
+TC-001-017,BVA,First name,11240605b8f3,PASS,3.979,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username017,f1_11240605b8f3_017@example.com,,
+TC-001-018,BVA,First name,11240605b8f3,PASS,3.712,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username018,f1_11240605b8f3_018@example.com,,
+TC-001-019,BVA,First name,11240605b8f3,FAIL,18.128,success,regexp:.*Changes saved.*,"AssertionError: success not matched. Locator=css=div.alert-success[role='alert'], expected='regexp:.*Changes saved.*', last observed=''",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0019,f1_11240605b8f3_019@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-019.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-019.txt
+TC-001-020,BVA,Surname,11240605b8f3,PASS,2.736,field_error,regexp:.+,Missing last name,,yes,no,username020,f1_11240605b8f3_020@example.com,,
+TC-001-021,BVA,Surname,11240605b8f3,PASS,3.471,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username0021,f1_11240605b8f3_021@example.com,,
+TC-001-022,BVA,Surname,11240605b8f3,PASS,3.533,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username022,f1_11240605b8f3_022@example.com,,
+TC-001-023,BVA,Surname,11240605b8f3,PASS,3.808,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username023,f1_11240605b8f3_023@example.com,,
+TC-001-024,BVA,Surname,11240605b8f3,PASS,3.710,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username024,f1_11240605b8f3_024@example.com,,
+TC-001-025,BVA,Surname,11240605b8f3,FAIL,18.963,success,regexp:.*Changes saved.*,"AssertionError: success not matched. Locator=css=div.alert-success[role='alert'], expected='regexp:.*Changes saved.*', last observed=''",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0205,f1_11240605b8f3_025@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-025.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-025.txt
+TC-001-026,BVA,Email address,11240605b8f3,PASS,2.789,field_error,regexp:.+,Required,,yes,no,username026,,,
+TC-001-027,BVA,Email address,11240605b8f3,PASS,4.106,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username027,f1.027aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,,
+TC-001-028,BVA,Email address,11240605b8f3,PASS,3.660,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username028,f1.028aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,,
+TC-001-029,BVA,Email address,11240605b8f3,FAIL,18.332,success,regexp:.*Changes saved.*,"AssertionError: success not matched. Locator=css=div.alert-success[role='alert'], expected='regexp:.*Changes saved.*', last observed=''",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0209,f1.029aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-029.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-029.txt
+TC-001-104,ECP,Username,11240605b8f3,PASS,3.705,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username104.a-b_c@9,f1_11240605b8f3_104@example.com,,
+TC-001-105,ECP,Username,11240605b8f3,PASS,3.019,field_error,regexp:.+,Only lowercase letters allowed,,yes,no,Username105,f1_11240605b8f3_105@example.com,,
+TC-001-106,ECP,Username,11240605b8f3,PASS,3.166,field_error,regexp:.+,"The username can only contain alphanumeric lowercase characters (letters and numbers), underscore (_), hyphen (-), period (.) or at symbol (@).",,yes,no,username 106,f1_11240605b8f3_106@example.com,,
+TC-001-107,ECP,Username,11240605b8f3,PASS,2.853,field_error,regexp:.+,"The username can only contain alphanumeric lowercase characters (letters and numbers), underscore (_), hyphen (-), period (.) or at symbol (@).",,yes,no,username107đạt,f1_11240605b8f3_107@example.com,,
+TC-001-109,ECP,Username,11240605b8f3,PASS,3.113,field_error,Required,Required,,yes,no,,f1_11240605b8f3_109@example.com,,
+TC-001-110,ECP,Username,11240605b8f3,PASS,3.529,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username110,f1_11240605b8f3_110@example.com,,
+TC-001-111,ECP,New password,11240605b8f3,FAIL,17.633,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username111,f1_11240605b8f3_111@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-111.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-111.txt
+TC-001-112,ECP,New password,11240605b8f3,FAIL,17.702,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username112,f1_11240605b8f3_112@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-112.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-112.txt
+TC-001-113,ECP,New password,11240605b8f3,FAIL,17.213,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username113,f1_11240605b8f3_113@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-113.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-113.txt
+TC-001-114,ECP,New password,11240605b8f3,FAIL,17.915,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username114,f1_11240605b8f3_114@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/screenshots/TC-001-114.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T060555Z_11240605b8f3_211bc43d/F01_CORE/tracebacks/TC-001-114.txt
+TC-001-115,ECP,First name,11240605b8f3,PASS,3.066,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username115,f1_11240605b8f3_115@example.com,,
+TC-001-116,ECP,First name,11240605b8f3,PASS,2.747,field_error,Missing given name,Missing given name,,yes,no,username116,f1_11240605b8f3_116@example.com,,
+TC-001-117,ECP,Surname,11240605b8f3,PASS,3.197,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username117,f1_11240605b8f3_117@example.com,,
+TC-001-118,ECP,Surname,11240605b8f3,PASS,2.604,field_error,regexp:.+,Missing last name,,yes,no,username118,f1_11240605b8f3_118@example.com,,
+TC-001-119,ECP,Email address,11240605b8f3,PASS,3.073,field_error,regexp:.+,Invalid email address,,yes,no,username119,f1mail.example.com,,
+TC-001-120,ECP,Email address,11240605b8f3,PASS,3.218,field_error,regexp:.+,Invalid email address,,yes,no,username120,f1@,,
+TC-001-121,ECP,Email address,11240605b8f3,SKIP,0.000,field_error,regexp:.+,Requires existing f1_existing@example.com account; use --include-fixtures after seeding,DUPLICATE_EMAIL_FIXTURE_REQUIRED,yes,yes,,,,
+TC-001-122,ECP,Email address,11240605b8f3,SKIP,0.000,field_error,regexp:.+,Requires existing f1_existing@example.com account; use --include-fixtures after seeding,DUPLICATE_EMAIL_FIXTURE_REQUIRED,yes,yes,,,,
+TC-001-123,ECP,Email address,11240605b8f3,PASS,3.397,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username123,f1_trim_email@example.com,,

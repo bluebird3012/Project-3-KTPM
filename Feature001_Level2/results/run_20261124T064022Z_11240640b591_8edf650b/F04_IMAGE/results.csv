@@ -1,0 +1,16 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-095,BVA,New picture,11240640b591,PASS,4.615,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username095,f1_11240640b591_095@example.com,,
+TC-001-096,BVA,New picture,11240640b591,PASS,6.355,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification; 1 draft picture(s)","Katalon has manual upload pause, no filename. Project #2 requires valid PNG below M; supplied synthetic PNG.",yes,no,username096,f1_11240640b591_096@example.com,,
+TC-001-097,BVA,New picture,11240640b591,PASS,6.086,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification; 1 draft picture(s); Add control unavailable at one-file limit",Second PNG not retained; picker may prevent second upload entirely. Synthetic valid PNG files.,yes,no,username097,f1_11240640b591_097@example.com,,
+TC-001-098,BVA,New picture,11240640b591,SKIP,0.000,success,regexp:.*Changes saved.*,Set MOODLE_IMAGE_MAX_BYTES to the actual finite limit M in bytes.,"Requires finite max M, exact M−1 bytes; current screenshot shows Unlimited.",yes,no,,,,
+TC-001-099,BVA,New picture,11240640b591,SKIP,0.000,success,regexp:.*Changes saved.*,Set MOODLE_IMAGE_MAX_BYTES to the actual finite limit M in bytes.,"Requires finite max M, exact M bytes; current screenshot shows Unlimited.",yes,no,,,,
+TC-001-100,BVA,New picture,11240640b591,SKIP,0.000,absence,absent,Set MOODLE_IMAGE_MAX_BYTES to the actual finite limit M in bytes.,"Requires finite max M, exact M+1 bytes; no Create user submission is intentional.",no,no,,,,
+TC-001-137,ECP,New picture,11240640b591,ERROR,33.264,success,regexp:.*Changes saved.*,"TimeoutException: Message: Could not click Upload this file for f1_avatar.jpg
+",Project #2 specifies f1_avatar.jpg; synthetic JPEG supplied.,yes,no,username137,f1_11240640b591_137@example.com,/home/dattran/PythonProjects/Project3/Feature001_Level2/results/run_20261124T064022Z_11240640b591_8edf650b/F04_IMAGE/screenshots/TC-001-137.png,/home/dattran/PythonProjects/Project3/Feature001_Level2/results/run_20261124T064022Z_11240640b591_8edf650b/F04_IMAGE/tracebacks/TC-001-137.txt
+TC-001-138,ECP,New picture,11240640b591,PASS,3.346,absence,absent,picture_file: absent; error: Text file filetype cannot be accepted.,Project #2 specifies f1_note.txt; no submit intentional.,no,no,username138,f1_11240640b591_138@example.com,,
+TC-001-139,ECP,New picture,11240640b591,PASS,3.175,absence,absent,No generated draft thumbnail; generic file icon present. Original Katalon .fp-file img absence assertion would fail.; 1 draft picture(s),"Katalon requires draft file present and thumbnail absent, while report allows rejection or no avatar. Preserve recorded oracle; inspect real outcome separately; no submit intentional.",no,no,username139,f1_11240640b591_139@example.com,,
+TC-001-140,ECP,New picture,11240640b591,PASS,5.088,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",Delete picture checkbox may not exist on a new user without picture; do not fabricate action.,yes,no,username140,f1_11240640b591_140@example.com,,

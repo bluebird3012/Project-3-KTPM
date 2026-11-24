@@ -1,0 +1,83 @@
+item_name,item_type,item_value
+CREATE_USER_PATH,path,/user/editadvanced.php?id=-1
+LOGIN_PATH,path,/login/index.php
+PASSWORD_TOGGLE,css,"[data-passwordunmaskid=""id_newpassword""] a[data-passwordunmask=""edit""]"
+SUCCESS_SELECTOR,css,"div.alert-success[role=""alert""]"
+LOGIN_LINK,css,"a[href*=""/login/index.php""]"
+LOGIN_ERROR_SELECTOR,css,"#loginerrormessage, .loginerrors, .alert-danger"
+RICH_BODY,css,body#tinymce
+RICH_BOLD,css,body#tinymce strong
+INTERESTS_TOGGLE,css,"a[aria-controls=""id_moodle_interestscontainer""]"
+TAG_INPUT,css,"#fitem_id_interests input[placeholder=""Enter tags...""]"
+TAG_SELECTED,css,#id_interests option:checked
+PICTURE_ADD,css,#id_imagefile_fieldset .fp-btn-add a
+PICTURE_FILES,css,#id_imagefile_fieldset .fp-file
+PICTURE_THUMBNAIL,css,"#id_imagefile_fieldset .fp-file img[src*=""preview=thumb""], #id_imagefile_fieldset .fp-file img[src*=""preview=tinyicon""]"
+PICTURE_FILE_ICONS,css,#id_imagefile_fieldset .fp-file img
+PICTURE_SECTION,css,"a[aria-controls=""id_moodle_picturecontainer""]"
+PICKER_UPLOAD_INPUT,css,".file-picker input[type=""file""], .fp-upload-form input[type=""file""]"
+PICKER_UPLOAD_BUTTON,css,".file-picker .fp-upload-btn, .fp-upload-form .fp-upload-btn"
+PICKER_ERROR,css,".fp-error, .fp-msg-error, .file-picker .alert-danger, .moodle-dialogue .alert-danger, .moodle-dialogue .fp-msg .fp-msg-text, .moodle-dialogue [role=alert], .modal [role=alert], .modal .alert-danger"
+PICKER_DIALOG,css,".moodle-dialogue, .modal.show, [role=alertdialog]"
+PICKER_DIALOG_TITLE,css,".moodle-dialogue-hd, .modal-title, [data-region=title]"
+PICKER_DIALOG_BODY,css,".moodle-dialogue-bd, .modal-body, [data-region=body]"
+PICKER_CLOSE,css,".moodle-dialogue-base .moodle-dialogue .closebutton, .moodle-dialogue-base .moodle-dialogue button.btn-close, .moodle-dialogue-base .moodle-dialogue [data-action=""hide""]"
+USER_MENU,css,".usermenu .dropdown-toggle, #user-menu-toggle"
+DENIAL_ERROR,css,".alert-danger, .errormessage, #notice"
+LOGIN_USERNAME_ID,id,username
+LOGIN_PASSWORD_ID,id,password
+LOGIN_BUTTON_ID,id,loginbtn
+AUTH_ID,id,id_auth
+SUBMIT_ID,id,id_submitbutton
+RICH_FRAME,id,id_description_editor_ifr
+CANCEL_ID,id,id_cancel
+PICTURE_UNLIMITED,xpath,"//*[contains(normalize-space(text()),'Maximum file size: Unlimited')]"
+PICKER_REPOSITORY,xpath,//*[self::a or self::button][normalize-space(.)='Upload a file' or .//*[normalize-space(.)='Upload a file']]
+PICKER_UPLOAD_TEXT,xpath,//button[normalize-space(.)='Upload this file']
+PICKER_OK,xpath,//button[normalize-space(.)='OK' or normalize-space(.)='Ok']
+FIELD_IDS.username,id,id_username
+FIELD_IDS.first_name,id,id_firstname
+FIELD_IDS.last_name,id,id_lastname
+FIELD_IDS.email,id,id_email
+FIELD_IDS.new_password,id,id_newpassword
+TEXT_FIELD_IDS.city,id,id_city
+TEXT_FIELD_IDS.image_alt,id,id_imagealt
+TEXT_FIELD_IDS.first_name_phonetic,id,id_firstnamephonetic
+TEXT_FIELD_IDS.last_name_phonetic,id,id_lastnamephonetic
+TEXT_FIELD_IDS.middle_name,id,id_middlename
+TEXT_FIELD_IDS.alternate_name,id,id_alternatename
+TEXT_FIELD_IDS.id_number,id,id_idnumber
+TEXT_FIELD_IDS.institution,id,id_institution
+TEXT_FIELD_IDS.department,id,id_department
+TEXT_FIELD_IDS.address,id,id_address
+TEXT_FIELD_IDS.phone,id,id_phone1
+TEXT_FIELD_IDS.mobile_phone,id,id_phone2
+SECTION_TOGGLES.additional_names,css,"a[aria-controls=""id_moodle_additional_namescontainer""]"
+SECTION_TOGGLES.optional,css,"a[aria-controls=""id_moodle_optionalcontainer""]"
+FLAG_IDS.suspended,id,id_suspended
+FLAG_IDS.generate_password,id,id_createpassword
+FLAG_IDS.force_password_change,id,id_preference_auth_forcepasswordchange
+FLAG_IDS.delete_picture,id,id_deletepicture
+SELECT_IDS.email_display,id,id_maildisplay
+SELECT_IDS.country,id,id_country
+SELECT_IDS.timezone,id,id_timezone
+SELECT_IDS.language,id,id_lang
+VERIFICATION.success_message,css,div.alert-success[role='alert']
+VERIFICATION.password_error,id,id_error_newpassword
+VERIFICATION.username_error,id,id_error_username
+VERIFICATION.email_error,id,id_error_email
+VERIFICATION.system_error,css,p.errormessage
+VERIFICATION.first_name_error,id,id_error_firstname
+VERIFICATION.last_name_error,id,id_error_lastname
+VERIFICATION.description_error,id,id_error_description_editor
+VERIFICATION.suspended_error,id,id_error_suspended
+VERIFICATION.add_user_link,xpath,"//a[contains(@href,'/user/editadvanced.php') and contains(normalize-space(.),'Add a new user')]"
+BASE_URL,url,http://127.0.0.1:9502
+HOME_PATH,path,/
+LOGIN_PREFIX,path,/login
+DRAFT_FILE_TOKEN,token,draftfile.php
+THEME_IMAGE_PATH,path,/theme/image.php
+PIX_FILE_PATH,path,/pix/f/
+THEME_FILE_PATH,path,/f/
+THEME_FILE_QUERY_PREFIX,token,f/
+RICH_FRAME_SUFFIX,token,_ifr

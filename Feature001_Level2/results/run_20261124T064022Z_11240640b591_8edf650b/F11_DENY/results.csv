@@ -1,0 +1,2 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-159,UC,Access permission,11240640b591,SKIP,0.000,absence,absent,"Provide a dedicated non-admin, non-guest account without moodle/user:create in .env.","Requires authenticated non-admin user without moodle/user:create; use separate credentials, never Admin or anonymous.",no,no,,,,

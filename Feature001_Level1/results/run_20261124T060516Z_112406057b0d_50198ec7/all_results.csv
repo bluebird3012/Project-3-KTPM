@@ -1,0 +1,9 @@
+﻿group,test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+F01_CORE,TC-001-013,BVA,New password,112406057b0d,PASS,4.500,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",SOURCE_ERROR_LOCATOR_NORMALIZED,yes,no,username013,f1_112406057b0d_013@example.com,,
+F01_CORE,TC-001-019,BVA,First name,112406057b0d,PASS,4.206,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0019,f1_112406057b0d_019@example.com,,
+F01_CORE,TC-001-025,BVA,Surname,112406057b0d,PASS,3.778,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0205,f1_112406057b0d_025@example.com,,
+F01_CORE,TC-001-029,BVA,Email address,112406057b0d,PASS,4.024,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0209,f1.029aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,,

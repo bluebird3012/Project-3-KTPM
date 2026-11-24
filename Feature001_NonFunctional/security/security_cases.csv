@@ -1,0 +1,11 @@
+case_id,scenario,expected
+SEC-01,Anonymous GET,deny access
+SEC-02,Student GET without create capability,deny access
+SEC-03,Teacher GET without create capability,deny access
+SEC-04,Anonymous POST,no account created
+SEC-05,Restricted authenticated POST with own sesskey,no account created
+SEC-06,Admin POST without sesskey,no account created
+SEC-07,Admin POST with invalid sesskey,no account created
+SEC-08,POST using pre-logout session cookie,no account created
+SEC-09,POST using invalid Moodle session cookie,no account created
+SEC-10,Admin valid POST,exact account created

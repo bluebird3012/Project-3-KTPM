@@ -1,0 +1,3 @@
+﻿test_case_id,technique,focus,authentication,username,first_name,last_name,email,new_password,password_entry,first_name_entry,last_name_entry,pre_submit_checks_json,expected_kind,expected_target,expected_text,source_has_submit,fixture_required,review_tags,katalon_step_count,flags_json,intermediate_target,intermediate_expected_text
+TC-001-157,UC,Cancel,manual,username157,An,Nguyen,f1_{run_id}_157@example.com,Qa7!rT2@,type,type,type,[],presence,add_user_link,present,no,no,,14,[],,
+TC-001-160,UC,Cancel,manual,username160,An,Nguyen,f1_{run_id}_160@example.com,,omit,type,type,[],presence,add_user_link,present,yes,no,Must verify conflict error before cancellation.,16,"[""suspended"", ""generate_password""]",suspended_error,regexp:.+

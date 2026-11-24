@@ -1,0 +1,2 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-001,BVA,Username,11240222fadc,PASS,4.308,field_error,Required,Required,,yes,no,,f1_11240222fadc_001@example.com,,

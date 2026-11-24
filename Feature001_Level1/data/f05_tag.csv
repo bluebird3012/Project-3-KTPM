@@ -1,0 +1,5 @@
+﻿test_case_id,technique,focus,authentication,username,first_name,last_name,email,new_password,password_entry,first_name_entry,last_name_entry,pre_submit_checks_json,expected_kind,expected_target,expected_text,source_has_submit,fixture_required,review_tags,katalon_step_count,tags_json,expected_tag_count
+TC-001-101,BVA,Interests,manual,username101,An,Nguyen,f1_{run_id}_101@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,16,[],0
+TC-001-102,BVA,Interests,manual,username102,An,Nguyen,f1_{run_id}_102@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,18,"[""testing""]",1
+TC-001-103,BVA,Interests,manual,username103,An,Nguyen,f1_{run_id}_103@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,21,"[""testing"", ""moodle""]",2
+TC-001-141,ECP,Interests,manual,username141,An,Nguyen,f1_{run_id}_141@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,21,"[""testing"", ""testing""]",1

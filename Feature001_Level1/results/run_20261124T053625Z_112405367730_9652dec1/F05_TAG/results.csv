@@ -1,0 +1,9 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-101,BVA,Interests,112405367730,PASS,5.806,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username101,f1_112405367730_101@example.com,,
+TC-001-102,BVA,Interests,112405367730,ERROR,16.831,success,regexp:.*Changes saved.*,"TimeoutException: Message: Cannot enter value into field (id=id_newpassword)
+",,yes,no,username102,f1_112405367730_102@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F05_TAG/screenshots/TC-001-102.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F05_TAG/tracebacks/TC-001-102.txt
+TC-001-103,BVA,Interests,112405367730,PASS,5.044,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username103,f1_112405367730_103@example.com,,
+TC-001-141,ECP,Interests,112405367730,PASS,5.349,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username141,f1_112405367730_141@example.com,,

@@ -1,0 +1,14 @@
+{
+  "run_id": "112405367730",
+  "base_url": "http://127.0.0.1:9502",
+  "started_utc": "2026-11-24T05:45:55.640530+00:00",
+  "finished_utc": "2026-11-24T05:46:31.635868+00:00",
+  "total": 4,
+  "counts": {
+    "PASS": 3,
+    "FAIL": 0,
+    "ERROR": 1,
+    "SKIP": 0
+  },
+  "warning": "Success asserts source toast; account persistence is NOT independently validated."
+}

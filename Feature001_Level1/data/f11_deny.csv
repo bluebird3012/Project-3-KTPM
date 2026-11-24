@@ -1,0 +1,2 @@
+﻿test_case_id,technique,focus,authentication,username,first_name,last_name,email,new_password,password_entry,first_name_entry,last_name_entry,pre_submit_checks_json,expected_kind,expected_target,expected_text,source_has_submit,fixture_required,review_tags,katalon_step_count
+TC-001-159,UC,Access permission,manual,,,,,,omit,omit,omit,[],absence,create_button,absent,no,no,"Requires authenticated non-admin user without moodle/user:create; use separate credentials, never Admin or anonymous.",4

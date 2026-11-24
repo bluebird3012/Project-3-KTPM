@@ -1,0 +1,8 @@
+﻿test_case_id,technique,focus,authentication,username,first_name,last_name,email,new_password,password_entry,first_name_entry,last_name_entry,pre_submit_checks_json,expected_kind,expected_target,expected_text,source_has_submit,fixture_required,review_tags,katalon_step_count,select_field,select_value,verify_selection
+TC-001-129,ECP,Dropdown,manual,username129,An,Nguyen,f1_{run_id}_129@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,16,email_display,0,yes
+TC-001-130,ECP,Dropdown,manual,username130,An,Nguyen,f1_{run_id}_130@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,16,email_display,1,yes
+TC-001-131,ECP,Dropdown,manual,username131,An,Nguyen,f1_{run_id}_131@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,16,email_display,2,yes
+TC-001-132,ECP,Dropdown,manual,username132,An,Nguyen,f1_{run_id}_132@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,country,VN,no
+TC-001-133,ECP,Dropdown,manual,username133,An,Nguyen,f1_{run_id}_133@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,timezone,99,no
+TC-001-134,ECP,Dropdown,manual,username134,An,Nguyen,f1_{run_id}_134@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,timezone,Asia/Ho_Chi_Minh,no
+TC-001-135,ECP,Dropdown,manual,username135,An,Nguyen,f1_{run_id}_135@example.com,Qa7!rT2@,type,type,type,[],success,success_message,regexp:.*Changes saved.*,yes,no,,15,language,en,no

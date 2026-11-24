@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/test_core_fields.py", line 544, in main
+    actual = run_case(browser, base_url, case, run_id, args.timeout)
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/test_core_fields.py", line 448, in run_case
+    verify_pre_submit(browser, json.loads(case["pre_submit_checks_json"] or "[]"))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dattran/PythonProjects/Feature001_F01_CORE_Level1_AutoLogin/F01_CORE_Level1_auto_login/test_core_fields.py", line 392, in verify_pre_submit
+    raise AssertionError(
+    ...<2 lines>...
+    )
+AssertionError: Pre-submit value mismatch for id=id_lastname: expected 101 chars, got 100 chars

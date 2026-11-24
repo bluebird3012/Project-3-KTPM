@@ -1,0 +1,17 @@
+﻿test_case_id,attempted_username,attempted_email,status,note
+TC-001-124,username124,f1_11240605b8f3_124@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-125,username125,f1_11240605b8f3_125@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-126,username126,f1_11240605b8f3_126@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-127,username127,f1_11240605b8f3_127@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-128,username128,f1_11240605b8f3_128@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-146,username146,f1_11240605b8f3_146@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-147,username147,f1_11240605b8f3_147@example.com,ERROR,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-148,username148,f1_11240605b8f3_148@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-149,username149,f1_11240605b8f3_149@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-150,username150,f1_11240605b8f3_150@example.com,FAIL,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-151,username151,f1_11240605b8f3_151@example.com,FAIL,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-152,username152,f1_11240605b8f3_152@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-153,username153,f1_11240605b8f3_153@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-154,username154,f1_11240605b8f3_154@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-155,username155,f1_11240605b8f3_155@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation
+TC-001-156,username156,f1_11240605b8f3_156@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation

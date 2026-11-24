@@ -1,0 +1,2 @@
+﻿test_case_id,attempted_username,attempted_email,status,note
+TC-001-108,username108_112405367730,f1_112405367730_108@example.com,PASS,Check account existence in Moodle before deleting; NOT proof of creation

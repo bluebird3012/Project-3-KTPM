@@ -1,0 +1,29 @@
+{
+  "run_id": "11240504f1f2",
+  "base_url": "http://127.0.0.1:9502",
+  "started_utc": "2026-11-24T05:04:34.679940+00:00",
+  "finished_utc": "2026-11-24T05:35:15.534671+00:00",
+  "groups": [
+    "F01_CORE",
+    "F02_TEXT",
+    "F03_RICH",
+    "F04_IMAGE",
+    "F05_TAG",
+    "F06_FLAGS",
+    "F07_SELECT",
+    "F08_DUP",
+    "F09_CANCEL",
+    "F10_RECOVER",
+    "F11_DENY"
+  ],
+  "total": 160,
+  "counts": {
+    "PASS": 14,
+    "FAIL": 60,
+    "ERROR": 0,
+    "SKIP": 3
+  },
+  "not_recorded": 83,
+  "complete": false,
+  "exit_code": null
+}

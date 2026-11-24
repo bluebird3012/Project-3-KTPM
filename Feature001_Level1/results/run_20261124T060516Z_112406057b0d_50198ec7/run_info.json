@@ -1,0 +1,19 @@
+{
+  "run_id": "112406057b0d",
+  "base_url": "http://127.0.0.1:9502",
+  "started_utc": "2026-11-24T06:05:16.584860+00:00",
+  "finished_utc": "2026-11-24T06:05:38.376812+00:00",
+  "groups": [
+    "F01_CORE"
+  ],
+  "total": 4,
+  "counts": {
+    "PASS": 4,
+    "FAIL": 0,
+    "ERROR": 0,
+    "SKIP": 0
+  },
+  "not_recorded": 0,
+  "complete": true,
+  "exit_code": 0
+}

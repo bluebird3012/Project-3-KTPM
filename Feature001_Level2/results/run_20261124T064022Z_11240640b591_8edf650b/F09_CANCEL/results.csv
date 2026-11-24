@@ -1,0 +1,3 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-157,UC,Cancel,11240640b591,PASS,5.147,presence,present,add_user_link: present,,no,no,username157,f1_11240640b591_157@example.com,,
+TC-001-160,UC,Cancel,11240640b591,PASS,7.047,presence,present,add_user_link: present,Must verify conflict error before cancellation.,yes,no,username160,f1_11240640b591_160@example.com,,

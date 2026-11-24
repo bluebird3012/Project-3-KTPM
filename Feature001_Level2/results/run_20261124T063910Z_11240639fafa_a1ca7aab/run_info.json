@@ -1,0 +1,32 @@
+{
+  "level": 2,
+  "testing_items_file": "config/testing_items.csv",
+  "testing_items_sha256": "819f975383b1a8bc925a74c0f27160a49dfea9be444c024600286b5aef46e116",
+  "run_id": "11240639fafa",
+  "base_url": "http://127.0.0.1:9502",
+  "started_utc": "2026-11-24T06:39:10.746335+00:00",
+  "finished_utc": "2026-11-24T06:39:14.774105+00:00",
+  "groups": [
+    "F01_CORE",
+    "F02_TEXT",
+    "F03_RICH",
+    "F04_IMAGE",
+    "F05_TAG",
+    "F06_FLAGS",
+    "F07_SELECT",
+    "F08_DUP",
+    "F09_CANCEL",
+    "F10_RECOVER",
+    "F11_DENY"
+  ],
+  "total": 160,
+  "counts": {
+    "PASS": 0,
+    "FAIL": 0,
+    "ERROR": 0,
+    "SKIP": 0
+  },
+  "not_recorded": 160,
+  "complete": false,
+  "exit_code": null
+}

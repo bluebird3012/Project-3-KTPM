@@ -1,0 +1,13 @@
+﻿test_case_id,review_tag,issue,suggested_action
+TC-001-006,MISSING_SUBMIT_IN_SOURCE,Katalon source lacks submit click,Review original sequence; explicitly use --repair-missing-submit only if agreed
+TC-001-006,LEGACY_EXPECTS_DATABASE_ERROR,Expected Result from Katalon is database error,"Treat as legacy defect observation, not desired business behavior"
+TC-001-013,SOURCE_ERROR_LOCATOR_NORMALIZED,Malformed source locator normalized in Level 1,Record id=id_error_newpassword as corrected locator
+TC-001-019,LEGACY_EXPECTS_DATABASE_ERROR,Expected Result from Katalon is database error,"Treat as legacy defect observation, not desired business behavior"
+TC-001-025,LEGACY_EXPECTS_DATABASE_ERROR,Expected Result from Katalon is database error,"Treat as legacy defect observation, not desired business behavior"
+TC-001-029,LEGACY_EXPECTS_DATABASE_ERROR,Expected Result from Katalon is database error,"Treat as legacy defect observation, not desired business behavior"
+TC-001-111,PASSWORD_POLICY_OFF_CONFLICT,Katalon expects password validation despite policy disabled,Review expected-vs-config; do not enable policy without updating scope
+TC-001-112,PASSWORD_POLICY_OFF_CONFLICT,Katalon expects password validation despite policy disabled,Review expected-vs-config; do not enable policy without updating scope
+TC-001-113,PASSWORD_POLICY_OFF_CONFLICT,Katalon expects password validation despite policy disabled,Review expected-vs-config; do not enable policy without updating scope
+TC-001-114,PASSWORD_POLICY_OFF_CONFLICT,Katalon expects password validation despite policy disabled,Review expected-vs-config; do not enable policy without updating scope
+TC-001-121,DUPLICATE_EMAIL_FIXTURE_REQUIRED,Existing user fixture required,Seed f1_existing@example.com and verify duplicate-email setting
+TC-001-122,DUPLICATE_EMAIL_FIXTURE_REQUIRED,Existing user fixture required,Seed f1_existing@example.com and verify duplicate-email setting

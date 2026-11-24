@@ -1,0 +1,277 @@
+﻿group,test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+F01_CORE,TC-001-001,BVA,Username,112405367730,PASS,4.255,field_error,Required,Required,,yes,no,,f1_112405367730_001@example.com,,
+F01_CORE,TC-001-002,BVA,Username,112405367730,PASS,3.296,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,w,f1_112405367730_002@example.com,,
+F01_CORE,TC-001-003,BVA,Username,112405367730,PASS,3.489,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,vy,f1_112405367730_003@example.com,,
+F01_CORE,TC-001-004,BVA,Username,112405367730,PASS,3.514,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username004_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,f1_112405367730_004@example.com,,
+F01_CORE,TC-001-005,BVA,Username,112405367730,PASS,3.211,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username005_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa,f1_112405367730_005@example.com,,
+F01_CORE,TC-001-006,BVA,Username,112405367730,SKIP,0.000,system_error,Error writing to database,Original Katalon has no Create user submit; pass --repair-missing-submit only after review,MISSING_SUBMIT_IN_SOURCE;LEGACY_EXPECTS_DATABASE_ERROR,no,no,,,,
+F01_CORE,TC-001-007,BVA,New password,112405367730,PASS,3.107,field_error,Required,Required,,yes,no,username007,f1_112405367730_007@example.com,,
+F01_CORE,TC-001-008,BVA,New password,112405367730,PASS,3.362,field_error,regexp:.+,Required,,yes,no,username0000008,f1_112405367730_008@example.com,,
+F01_CORE,TC-001-009,BVA,New password,112405367730,PASS,3.618,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username009,f1_112405367730_009@example.com,,
+F01_CORE,TC-001-010,BVA,New password,112405367730,PASS,3.402,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username010,f1_112405367730_010@example.com,,
+F01_CORE,TC-001-011,BVA,New password,112405367730,PASS,3.672,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username011,f1_112405367730_011@example.com,,
+F01_CORE,TC-001-012,BVA,New password,112405367730,PASS,3.402,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username012,f1_112405367730_012@example.com,,
+F01_CORE,TC-001-013,BVA,New password,112405367730,FAIL,1.547,field_error,Maximum of 128 characters,"AssertionError: Pre-submit value mismatch for id=id_newpassword: expected 129 chars, got 128 chars",SOURCE_ERROR_LOCATOR_NORMALIZED,yes,no,username013,f1_112405367730_013@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-013.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-013.txt
+F01_CORE,TC-001-014,BVA,First name,112405367730,PASS,2.741,field_error,Missing given name,Missing given name,,yes,no,username014,f1_112405367730_014@example.com,,
+F01_CORE,TC-001-015,BVA,First name,112405367730,PASS,3.843,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username0151,f1_112405367730_015@example.com,,
+F01_CORE,TC-001-016,BVA,First name,112405367730,PASS,3.648,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username016,f1_112405367730_016@example.com,,
+F01_CORE,TC-001-017,BVA,First name,112405367730,PASS,3.409,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username017,f1_112405367730_017@example.com,,
+F01_CORE,TC-001-018,BVA,First name,112405367730,PASS,3.656,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username018,f1_112405367730_018@example.com,,
+F01_CORE,TC-001-019,BVA,First name,112405367730,FAIL,1.647,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_firstname: expected 101 chars, got 100 chars",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0019,f1_112405367730_019@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-019.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-019.txt
+F01_CORE,TC-001-020,BVA,Surname,112405367730,PASS,3.033,field_error,regexp:.+,Missing last name,,yes,no,username020,f1_112405367730_020@example.com,,
+F01_CORE,TC-001-021,BVA,Surname,112405367730,PASS,3.277,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username0021,f1_112405367730_021@example.com,,
+F01_CORE,TC-001-022,BVA,Surname,112405367730,PASS,3.447,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username022,f1_112405367730_022@example.com,,
+F01_CORE,TC-001-023,BVA,Surname,112405367730,PASS,4.565,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username023,f1_112405367730_023@example.com,,
+F01_CORE,TC-001-024,BVA,Surname,112405367730,PASS,3.826,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username024,f1_112405367730_024@example.com,,
+F01_CORE,TC-001-025,BVA,Surname,112405367730,FAIL,1.571,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_lastname: expected 101 chars, got 100 chars",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0205,f1_112405367730_025@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-025.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-025.txt
+F01_CORE,TC-001-026,BVA,Email address,112405367730,PASS,2.958,field_error,regexp:.+,Required,,yes,no,username026,,,
+F01_CORE,TC-001-027,BVA,Email address,112405367730,PASS,3.812,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username027,f1.027aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,,
+F01_CORE,TC-001-028,BVA,Email address,112405367730,PASS,3.604,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username028,f1.028aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,,
+F01_CORE,TC-001-029,BVA,Email address,112405367730,FAIL,1.887,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_email: expected 101 chars, got 100 chars",LEGACY_EXPECTS_DATABASE_ERROR,yes,no,username0209,f1.029aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa@aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-029.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-029.txt
+F01_CORE,TC-001-104,ECP,Username,112405367730,PASS,3.870,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username104.a-b_c@9,f1_112405367730_104@example.com,,
+F01_CORE,TC-001-105,ECP,Username,112405367730,PASS,3.549,field_error,regexp:.+,Only lowercase letters allowed,,yes,no,Username105,f1_112405367730_105@example.com,,
+F01_CORE,TC-001-106,ECP,Username,112405367730,PASS,3.354,field_error,regexp:.+,"The username can only contain alphanumeric lowercase characters (letters and numbers), underscore (_), hyphen (-), period (.) or at symbol (@).",,yes,no,username 106,f1_112405367730_106@example.com,,
+F01_CORE,TC-001-107,ECP,Username,112405367730,PASS,3.371,field_error,regexp:.+,"The username can only contain alphanumeric lowercase characters (letters and numbers), underscore (_), hyphen (-), period (.) or at symbol (@).",,yes,no,username107đạt,f1_112405367730_107@example.com,,
+F01_CORE,TC-001-109,ECP,Username,112405367730,PASS,3.310,field_error,Required,Required,,yes,no,,f1_112405367730_109@example.com,,
+F01_CORE,TC-001-110,ECP,Username,112405367730,PASS,3.481,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username110,f1_112405367730_110@example.com,,
+F01_CORE,TC-001-111,ECP,New password,112405367730,FAIL,17.603,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username111,f1_112405367730_111@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-111.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-111.txt
+F01_CORE,TC-001-112,ECP,New password,112405367730,FAIL,17.702,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username112,f1_112405367730_112@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-112.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-112.txt
+F01_CORE,TC-001-113,ECP,New password,112405367730,FAIL,17.334,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username113,f1_112405367730_113@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-113.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-113.txt
+F01_CORE,TC-001-114,ECP,New password,112405367730,FAIL,18.186,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",PASSWORD_POLICY_OFF_CONFLICT,yes,no,username114,f1_112405367730_114@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/screenshots/TC-001-114.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F01_CORE/tracebacks/TC-001-114.txt
+F01_CORE,TC-001-115,ECP,First name,112405367730,PASS,3.126,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username115,f1_112405367730_115@example.com,,
+F01_CORE,TC-001-116,ECP,First name,112405367730,PASS,2.528,field_error,Missing given name,Missing given name,,yes,no,username116,f1_112405367730_116@example.com,,
+F01_CORE,TC-001-117,ECP,Surname,112405367730,PASS,3.069,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username117,f1_112405367730_117@example.com,,
+F01_CORE,TC-001-118,ECP,Surname,112405367730,PASS,2.339,field_error,regexp:.+,Missing last name,,yes,no,username118,f1_112405367730_118@example.com,,
+F01_CORE,TC-001-119,ECP,Email address,112405367730,PASS,3.358,field_error,regexp:.+,Invalid email address,,yes,no,username119,f1mail.example.com,,
+F01_CORE,TC-001-120,ECP,Email address,112405367730,PASS,3.148,field_error,regexp:.+,Invalid email address,,yes,no,username120,f1@,,
+F01_CORE,TC-001-121,ECP,Email address,112405367730,SKIP,0.000,field_error,regexp:.+,Requires existing f1_existing@example.com account; use --include-fixtures after seeding,DUPLICATE_EMAIL_FIXTURE_REQUIRED,yes,yes,,,,
+F01_CORE,TC-001-122,ECP,Email address,112405367730,SKIP,0.000,field_error,regexp:.+,Requires existing f1_existing@example.com account; use --include-fixtures after seeding,DUPLICATE_EMAIL_FIXTURE_REQUIRED,yes,yes,,,,
+F01_CORE,TC-001-123,ECP,Email address,112405367730,PASS,3.368,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username123,f1_trim_email@example.com,,
+F02_TEXT,TC-001-030,BVA,City/town,112405367730,PASS,3.861,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username030,f1_112405367730_030@example.com,,
+F02_TEXT,TC-001-031,BVA,City/town,112405367730,PASS,3.305,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username031,f1_112405367730_031@example.com,,
+F02_TEXT,TC-001-032,BVA,City/town,112405367730,PASS,3.538,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username032,f1_112405367730_032@example.com,,
+F02_TEXT,TC-001-033,BVA,City/town,112405367730,PASS,3.551,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username033,f1_112405367730_033@example.com,,
+F02_TEXT,TC-001-034,BVA,City/town,112405367730,FAIL,1.323,system_error,Error writing to database,"AssertionError: Pre-submit value mismatch for id=id_city: expected 121 chars, got 120 chars",legacy_database_error,yes,no,username034,f1_112405367730_034@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F02_TEXT/screenshots/TC-001-034.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F02_TEXT/tracebacks/TC-001-034.txt
+F02_TEXT,TC-001-035,BVA,Picture description,112405367730,PASS,3.757,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username035,f1_112405367730_035@example.com,,
+F02_TEXT,TC-001-036,BVA,Picture description,112405367730,PASS,3.553,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username036,f1_112405367730_036@example.com,,
+F02_TEXT,TC-001-037,BVA,Picture description,112405367730,PASS,3.582,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username037,f1_112405367730_037@example.com,,
+F02_TEXT,TC-001-038,BVA,Picture description,112405367730,PASS,3.383,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username038,f1_112405367730_038@example.com,,
+F02_TEXT,TC-001-039,BVA,Picture description,112405367730,FAIL,1.457,success,regexp:.*Changes saved.*,"AssertionError: Pre-submit value mismatch for id=id_imagealt: expected 197 chars, got 100 chars",source_length_197,yes,no,username00039,f1_112405367730_039@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F02_TEXT/screenshots/TC-001-039.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F02_TEXT/tracebacks/TC-001-039.txt
+F02_TEXT,TC-001-040,BVA,First name - phonetic,112405367730,PASS,5.318,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username040,f1_112405367730_040@example.com,,
+F02_TEXT,TC-001-041,BVA,First name - phonetic,112405367730,PASS,5.296,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username041,f1_112405367730_041@example.com,,
+F02_TEXT,TC-001-042,BVA,First name - phonetic,112405367730,PASS,5.235,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username042,f1_112405367730_042@example.com,,
+F02_TEXT,TC-001-043,BVA,First name - phonetic,112405367730,PASS,5.427,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username043,f1_112405367730_043@example.com,,
+F02_TEXT,TC-001-044,BVA,First name - phonetic,112405367730,FAIL,3.044,success,regexp:.*Changes saved.*,"AssertionError: Pre-submit value mismatch for id=id_firstnamephonetic: expected 101 chars, got 100 chars",source_full_length_check,yes,no,username044,f1_112405367730_044@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F02_TEXT/screenshots/TC-001-044.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F02_TEXT/tracebacks/TC-001-044.txt
+F02_TEXT,TC-001-045,BVA,Surname - phonetic,112405367730,PASS,5.024,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username045,f1_112405367730_045@example.com,,
+F02_TEXT,TC-001-046,BVA,Surname - phonetic,112405367730,PASS,5.400,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username046,f1_112405367730_046@example.com,,
+F02_TEXT,TC-001-047,BVA,Surname - phonetic,112405367730,PASS,5.245,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username047,f1_112405367730_047@example.com,,
+F02_TEXT,TC-001-048,BVA,Surname - phonetic,112405367730,PASS,4.582,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username048,f1_112405367730_048@example.com,,
+F02_TEXT,TC-001-049,BVA,Surname - phonetic,112405367730,PASS,4.949,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username049,f1_112405367730_049@example.com,,
+F02_TEXT,TC-001-050,BVA,Middle name,112405367730,PASS,4.837,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username050,f1_112405367730_050@example.com,,
+F02_TEXT,TC-001-051,BVA,Middle name,112405367730,PASS,4.705,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username051,f1_112405367730_051@example.com,,
+F02_TEXT,TC-001-052,BVA,Middle name,112405367730,PASS,4.769,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username052,f1_112405367730_052@example.com,,
+F02_TEXT,TC-001-053,BVA,Middle name,112405367730,PASS,4.793,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username053,f1_112405367730_053@example.com,,
+F02_TEXT,TC-001-054,BVA,Middle name,112405367730,PASS,4.993,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username054,f1_112405367730_054@example.com,,
+F02_TEXT,TC-001-055,BVA,Alternate name,112405367730,PASS,4.801,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username055,f1_112405367730_055@example.com,,
+F02_TEXT,TC-001-056,BVA,Alternate name,112405367730,PASS,4.879,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username056,f1_112405367730_056@example.com,,
+F02_TEXT,TC-001-057,BVA,Alternate name,112405367730,PASS,4.872,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username057,f1_112405367730_057@example.com,,
+F02_TEXT,TC-001-058,BVA,Alternate name,112405367730,PASS,4.709,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username058,f1_112405367730_058@example.com,,
+F02_TEXT,TC-001-059,BVA,Alternate name,112405367730,PASS,5.043,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username059,f1_112405367730_059@example.com,,
+F02_TEXT,TC-001-060,BVA,ID number,112405367730,PASS,4.810,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username060,f1_112405367730_060@example.com,,
+F02_TEXT,TC-001-061,BVA,ID number,112405367730,PASS,4.893,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username061,f1_112405367730_061@example.com,,
+F02_TEXT,TC-001-062,BVA,ID number,112405367730,PASS,5.090,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username062,f1_112405367730_062@example.com,,
+F02_TEXT,TC-001-063,BVA,ID number,112405367730,PASS,4.990,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username063,f1_112405367730_063@example.com,,
+F02_TEXT,TC-001-064,BVA,ID number,112405367730,PASS,5.025,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username064,f1_112405367730_064@example.com,,
+F02_TEXT,TC-001-065,BVA,Institution,112405367730,PASS,4.895,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username065,f1_112405367730_065@example.com,,
+F02_TEXT,TC-001-066,BVA,Institution,112405367730,PASS,4.991,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username066,f1_112405367730_066@example.com,,
+F02_TEXT,TC-001-067,BVA,Institution,112405367730,PASS,4.681,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username067,f1_112405367730_067@example.com,,
+F02_TEXT,TC-001-068,BVA,Institution,112405367730,PASS,4.754,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username068,f1_112405367730_068@example.com,,
+F02_TEXT,TC-001-069,BVA,Institution,112405367730,PASS,5.348,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username069,f1_112405367730_069@example.com,,
+F02_TEXT,TC-001-070,BVA,Department,112405367730,PASS,4.995,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username070,f1_112405367730_070@example.com,,
+F02_TEXT,TC-001-071,BVA,Department,112405367730,PASS,4.553,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username071,f1_112405367730_071@example.com,,
+F02_TEXT,TC-001-072,BVA,Department,112405367730,PASS,5.707,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username072,f1_112405367730_072@example.com,,
+F02_TEXT,TC-001-073,BVA,Department,112405367730,PASS,5.140,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username073,f1_112405367730_073@example.com,,
+F02_TEXT,TC-001-074,BVA,Department,112405367730,PASS,4.837,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username074,f1_112405367730_074@example.com,,
+F02_TEXT,TC-001-075,BVA,Address,112405367730,PASS,4.937,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username075,f1_112405367730_075@example.com,,
+F02_TEXT,TC-001-076,BVA,Address,112405367730,PASS,4.789,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username076,f1_112405367730_076@example.com,,
+F02_TEXT,TC-001-077,BVA,Address,112405367730,PASS,5.365,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username077,f1_112405367730_077@example.com,,
+F02_TEXT,TC-001-078,BVA,Address,112405367730,PASS,4.982,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username078,f1_112405367730_078@example.com,,
+F02_TEXT,TC-001-079,BVA,Address,112405367730,PASS,4.857,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username079,f1_112405367730_079@example.com,,
+F02_TEXT,TC-001-080,BVA,Phone,112405367730,PASS,4.493,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username080,f1_112405367730_080@example.com,,
+F02_TEXT,TC-001-081,BVA,Phone,112405367730,PASS,4.753,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username081,f1_112405367730_081@example.com,,
+F02_TEXT,TC-001-082,BVA,Phone,112405367730,PASS,4.864,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username082,f1_112405367730_082@example.com,,
+F02_TEXT,TC-001-083,BVA,Phone,112405367730,PASS,4.951,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username083,f1_112405367730_083@example.com,,
+F02_TEXT,TC-001-084,BVA,Phone,112405367730,PASS,4.925,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username084,f1_112405367730_084@example.com,,
+F02_TEXT,TC-001-085,BVA,Mobile phone,112405367730,PASS,4.802,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username085,f1_112405367730_085@example.com,,
+F02_TEXT,TC-001-086,BVA,Mobile phone,112405367730,PASS,4.681,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username086,f1_112405367730_086@example.com,,
+F02_TEXT,TC-001-087,BVA,Mobile phone,112405367730,PASS,4.828,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username087,f1_112405367730_087@example.com,,
+F02_TEXT,TC-001-088,BVA,Mobile phone,112405367730,PASS,5.301,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username088,f1_112405367730_088@example.com,,
+F02_TEXT,TC-001-089,BVA,Mobile phone,112405367730,PASS,5.023,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username089,f1_112405367730_089@example.com,,
+F02_TEXT,TC-001-142,ECP,Phone,112405367730,PASS,4.820,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username142,f1_112405367730_142@example.com,,
+F02_TEXT,TC-001-143,ECP,Mobile phone,112405367730,PASS,4.837,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username143,f1_112405367730_143@example.com,,
+F02_TEXT,TC-001-144,ECP,ID number,112405367730,PASS,5.285,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username144,f1_112405367730_144@example.com,,
+F02_TEXT,TC-001-145,ECP,City/town,112405367730,PASS,3.117,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username145,f1_112405367730_145@example.com,,
+F03_RICH,TC-001-090,BVA,Description,112405367730,PASS,4.434,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username090,f1_112405367730_090@example.com,,
+F03_RICH,TC-001-091,BVA,Description,112405367730,PASS,3.538,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username091,f1_112405367730_091@example.com,,
+F03_RICH,TC-001-092,BVA,Description,112405367730,PASS,3.919,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username092,f1_112405367730_092@example.com,,
+F03_RICH,TC-001-093,BVA,Description,112405367730,PASS,3.862,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username093,f1_112405367730_093@example.com,,
+F03_RICH,TC-001-094,BVA,Description,112405367730,PASS,3.289,field_error,regexp:.+,Maximum of 50000 characters,Original expects Description error; preserve even if server accepts input.,yes,no,username094,f1_112405367730_094@example.com,,
+F03_RICH,TC-001-136,ECP,Description,112405367730,PASS,3.694,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",Katalon export lost bold/newline markup; Project #2 explicitly specifies bold “Kiểm thử Moodle” and new line. Reconstructed markup; original exported text retained in source_editor_value.,yes,no,username136,f1_112405367730_136@example.com,,
+F04_IMAGE,TC-001-095,BVA,New picture,112405367730,PASS,4.264,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username095,f1_112405367730_095@example.com,,
+F04_IMAGE,TC-001-096,BVA,New picture,112405367730,PASS,5.761,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification; 1 draft picture(s)","Katalon has manual upload pause, no filename. Project #2 requires valid PNG below M; supplied synthetic PNG.",yes,no,username096,f1_112405367730_096@example.com,,
+F04_IMAGE,TC-001-097,BVA,New picture,112405367730,PASS,6.114,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification; 1 draft picture(s); Add control unavailable at one-file limit",Second PNG not retained; picker may prevent second upload entirely. Synthetic valid PNG files.,yes,no,username097,f1_112405367730_097@example.com,,
+F04_IMAGE,TC-001-098,BVA,New picture,112405367730,SKIP,0.000,success,regexp:.*Changes saved.*,Set MOODLE_IMAGE_MAX_BYTES to the actual finite limit M in bytes.,"Requires finite max M, exact M−1 bytes; current screenshot shows Unlimited.",yes,no,,,,
+F04_IMAGE,TC-001-099,BVA,New picture,112405367730,SKIP,0.000,success,regexp:.*Changes saved.*,Set MOODLE_IMAGE_MAX_BYTES to the actual finite limit M in bytes.,"Requires finite max M, exact M bytes; current screenshot shows Unlimited.",yes,no,,,,
+F04_IMAGE,TC-001-100,BVA,New picture,112405367730,SKIP,0.000,absence,absent,Set MOODLE_IMAGE_MAX_BYTES to the actual finite limit M in bytes.,"Requires finite max M, exact M+1 bytes; no Create user submission is intentional.",no,no,,,,
+F04_IMAGE,TC-001-137,ECP,New picture,112405367730,PASS,5.676,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification; 1 draft picture(s)",Project #2 specifies f1_avatar.jpg; synthetic JPEG supplied.,yes,no,username137,f1_112405367730_137@example.com,,
+F04_IMAGE,TC-001-138,ECP,New picture,112405367730,PASS,3.470,absence,absent,picture_file: absent; error: Text file filetype cannot be accepted.,Project #2 specifies f1_note.txt; no submit intentional.,no,no,username138,f1_112405367730_138@example.com,,
+F04_IMAGE,TC-001-139,ECP,New picture,112405367730,PASS,3.685,absence,absent,No generated draft thumbnail; generic file icon present. Original Katalon .fp-file img absence assertion would fail.; 1 draft picture(s),"Katalon requires draft file present and thumbnail absent, while report allows rejection or no avatar. Preserve recorded oracle; inspect real outcome separately; no submit intentional.",no,no,username139,f1_112405367730_139@example.com,,
+F04_IMAGE,TC-001-140,ECP,New picture,112405367730,PASS,4.541,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",Delete picture checkbox may not exist on a new user without picture; do not fabricate action.,yes,no,username140,f1_112405367730_140@example.com,,
+F05_TAG,TC-001-101,BVA,Interests,112405367730,PASS,5.806,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username101,f1_112405367730_101@example.com,,
+F05_TAG,TC-001-102,BVA,Interests,112405367730,ERROR,16.831,success,regexp:.*Changes saved.*,"TimeoutException: Message: Cannot enter value into field (id=id_newpassword)
+",,yes,no,username102,f1_112405367730_102@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F05_TAG/screenshots/TC-001-102.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F05_TAG/tracebacks/TC-001-102.txt
+F05_TAG,TC-001-103,BVA,Interests,112405367730,PASS,5.044,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username103,f1_112405367730_103@example.com,,
+F05_TAG,TC-001-141,ECP,Interests,112405367730,PASS,5.349,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username141,f1_112405367730_141@example.com,,
+F06_FLAGS,TC-001-124,ECP,Account options,112405367730,PASS,4.946,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username124,f1_112405367730_124@example.com,,
+F06_FLAGS,TC-001-125,ECP,Account options,112405367730,PASS,3.412,field_error,regexp:.+,Required,Password error with nologin may conflict with Moodle behavior; preserve.,yes,no,username125,f1_112405367730_125@example.com,,
+F06_FLAGS,TC-001-126,ECP,Account options,112405367730,PASS,4.094,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username126,f1_112405367730_126@example.com,,
+F06_FLAGS,TC-001-127,ECP,Account options,112405367730,PASS,3.465,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username127,f1_112405367730_127@example.com,,
+F06_FLAGS,TC-001-128,ECP,Account options,112405367730,PASS,4.073,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username128,f1_112405367730_128@example.com,,
+F06_FLAGS,TC-001-146,DT,Account options,112405367730,PASS,3.670,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username146,f1_112405367730_146@example.com,,
+F06_FLAGS,TC-001-147,DT,Account options,112405367730,PASS,3.906,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username147,f1_112405367730_147@example.com,,
+F06_FLAGS,TC-001-148,DT,Account options,112405367730,PASS,3.780,field_error,regexp:.+,Required,,yes,no,username148,f1_112405367730_148@example.com,,
+F06_FLAGS,TC-001-149,DT,Account options,112405367730,PASS,3.706,field_error,regexp:.+,Required,,yes,no,username149,f1_112405367730_149@example.com,,
+F06_FLAGS,TC-001-150,DT,Account options,112405367730,FAIL,18.558,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",Weak password oracle may conflict with disabled Password Policy.,yes,no,username150,f1_112405367730_150@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F06_FLAGS/screenshots/TC-001-150.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F06_FLAGS/tracebacks/TC-001-150.txt
+F06_FLAGS,TC-001-151,DT,Account options,112405367730,FAIL,19.877,field_error,regexp:.+,"AssertionError: field_error not matched. Locator=id=id_error_newpassword, expected='regexp:.+', last observed=''",Weak password oracle may conflict with disabled Password Policy.,yes,no,username151,f1_112405367730_151@example.com,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F06_FLAGS/screenshots/TC-001-151.png,/home/dattran/PythonProjects/Feature001_Level1_All160_UnifiedResults/Feature001_Level1/results/run_20261124T053625Z_112405367730_9652dec1/F06_FLAGS/tracebacks/TC-001-151.txt
+F06_FLAGS,TC-001-152,DT,Account options,112405367730,PASS,3.685,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username152,f1_112405367730_152@example.com,,
+F06_FLAGS,TC-001-153,DT,Account options,112405367730,PASS,3.878,field_error,regexp:.+,Error,,yes,no,username153,f1_112405367730_153@example.com,,
+F06_FLAGS,TC-001-154,UC,Account options,112405367730,PASS,4.444,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username154,f1_112405367730_154@example.com,,
+F06_FLAGS,TC-001-155,UC,Account options,112405367730,PASS,3.469,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username155,f1_112405367730_155@example.com,,
+F06_FLAGS,TC-001-156,UC,Account options,112405367730,PASS,4.487,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username156,f1_112405367730_156@example.com,,
+F07_SELECT,TC-001-129,ECP,Dropdown,112405367730,PASS,6.098,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username129,f1_112405367730_129@example.com,,
+F07_SELECT,TC-001-130,ECP,Dropdown,112405367730,PASS,4.381,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username130,f1_112405367730_130@example.com,,
+F07_SELECT,TC-001-131,ECP,Dropdown,112405367730,PASS,4.084,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username131,f1_112405367730_131@example.com,,
+F07_SELECT,TC-001-132,ECP,Dropdown,112405367730,PASS,4.040,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username132,f1_112405367730_132@example.com,,
+F07_SELECT,TC-001-133,ECP,Dropdown,112405367730,PASS,3.857,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username133,f1_112405367730_133@example.com,,
+F07_SELECT,TC-001-134,ECP,Dropdown,112405367730,PASS,3.571,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username134,f1_112405367730_134@example.com,,
+F07_SELECT,TC-001-135,ECP,Dropdown,112405367730,PASS,3.597,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification",,yes,no,username135,f1_112405367730_135@example.com,,
+F08_DUP,TC-001-108,ECP,Duplicate username,112405367730,PASS,8.352,field_error,"This username already exists, choose another","This username already exists, choose another",Dynamic duplicate username and distinct second email preserved; run_id replaces recorded draft IDs.,yes,no,username108_112405367730,f1_112405367730_108@example.com,,
+F09_CANCEL,TC-001-157,UC,Cancel,112405367730,PASS,5.002,presence,present,add_user_link: present,,no,no,username157,f1_112405367730_157@example.com,,
+F09_CANCEL,TC-001-160,UC,Cancel,112405367730,PASS,5.754,presence,present,add_user_link: present,Must verify conflict error before cancellation.,yes,no,username160,f1_112405367730_160@example.com,,
+F10_RECOVER,TC-001-158,UC,Recover duplicate username,112405367730,PASS,10.904,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification; seed username=username158_112405367730; recovery username=username158",Creates a seed and a recovered user; clean both after run. Dynamic draft IDs replaced by run_id.,yes,no,username158_112405367730,f1_112405367730_158@example.com,,
+F11_DENY,TC-001-159,UC,Access permission,112405367730,SKIP,0.000,absence,absent,"Provide a dedicated non-admin, non-guest account without moodle/user:create in .env.","Requires authenticated non-admin user without moodle/user:create; use separate credentials, never Admin or anonymous.",no,no,,,,

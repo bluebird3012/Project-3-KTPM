@@ -1,0 +1,19 @@
+﻿test_case_id,review_note
+TC-001-094,Original expects Description error; preserve even if server accepts input.
+TC-001-096,"Katalon has manual upload pause, no filename. Project #2 requires valid PNG below M; supplied synthetic PNG."
+TC-001-097,Second PNG not retained; picker may prevent second upload entirely. Synthetic valid PNG files.
+TC-001-098,"Requires finite max M, exact M−1 bytes; current screenshot shows Unlimited."
+TC-001-099,"Requires finite max M, exact M bytes; current screenshot shows Unlimited."
+TC-001-100,"Requires finite max M, exact M+1 bytes; no Create user submission is intentional."
+TC-001-108,Dynamic duplicate username and distinct second email preserved; run_id replaces recorded draft IDs.
+TC-001-125,Password error with nologin may conflict with Moodle behavior; preserve.
+TC-001-136,Katalon export lost bold/newline markup; Project #2 explicitly specifies bold “Kiểm thử Moodle” and new line. Reconstructed markup; original exported text retained in source_editor_value.
+TC-001-137,Project #2 specifies f1_avatar.jpg; synthetic JPEG supplied.
+TC-001-138,Project #2 specifies f1_note.txt; no submit intentional.
+TC-001-139,"Katalon requires draft file present and thumbnail absent, while report allows rejection or no avatar. Preserve recorded oracle; inspect real outcome separately; no submit intentional."
+TC-001-140,Delete picture checkbox may not exist on a new user without picture; do not fabricate action.
+TC-001-150,Weak password oracle may conflict with disabled Password Policy.
+TC-001-151,Weak password oracle may conflict with disabled Password Policy.
+TC-001-158,Creates a seed and a recovered user; clean both after run. Dynamic draft IDs replaced by run_id.
+TC-001-159,"Requires authenticated non-admin user without moodle/user:create; use separate credentials, never Admin or anonymous."
+TC-001-160,Must verify conflict error before cancellation.

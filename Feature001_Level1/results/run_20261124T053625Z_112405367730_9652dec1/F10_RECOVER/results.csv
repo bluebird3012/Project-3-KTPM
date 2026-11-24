@@ -1,0 +1,3 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,source_has_submit,fixture_required,attempted_username,attempted_email,screenshot,traceback_file
+TC-001-158,UC,Recover duplicate username,112405367730,PASS,10.904,success,regexp:.*Changes saved.*,"Changes saved
+Dismiss this notification; seed username=username158_112405367730; recovery username=username158",Creates a seed and a recovered user; clean both after run. Dynamic draft IDs replaced by run_id.,yes,no,username158_112405367730,f1_112405367730_158@example.com,,
