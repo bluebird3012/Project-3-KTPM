@@ -1,0 +1,6 @@
+scenario_id,description,kind
+ACC-01,Default Add New User page,axe
+ACC-02,Expanded optional form sections,axe
+ACC-03,Required-field validation errors,axe
+ACC-04,Keyboard reachability of core controls,keyboard
+ACC-05,Programmatic association of observed validation errors,validation
