@@ -1,0 +1,16 @@
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_bd070ad07cdb4155"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_67febdb034d94111"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_36cca7cacb28455b"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_96033072202a4724"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_3e973cbd7a784287"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_ea28e145b9374ccb"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_4d432da56d274ee3"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_e4f754d67f4d44f3"}
+{"event": "result", "quiz_name": "nfr4ad2922483228_3e973cbd7a784287", "http_ok": false, "status": 200, "response_ms": 31990.936, "error": "quiz_not_confirmed_in_course_view (status=200, url=http://127.0.0.1:9502/course/modedit.php)"}
+{"event": "result", "quiz_name": "nfr4ad2922483228_bd070ad07cdb4155", "http_ok": true, "status": 200, "response_ms": 68866.398, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_67febdb034d94111", "http_ok": true, "status": 200, "response_ms": 65195.012, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_96033072202a4724", "http_ok": true, "status": 200, "response_ms": 60848.45, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_36cca7cacb28455b", "http_ok": true, "status": 200, "response_ms": 63748.147, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_ea28e145b9374ccb", "http_ok": true, "status": 200, "response_ms": 62601.047, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_4d432da56d274ee3", "http_ok": true, "status": 200, "response_ms": 55334.828, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_e4f754d67f4d44f3", "http_ok": true, "status": 200, "response_ms": 55189.652, "error": ""}

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\core\runner.py", line 67, in run_suite
+    outcome = execute_case(browser, base_url, case, run_id, args.timeout)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\test_groups\test_timing_and_grade.py", line 45, in run_grade_app_case
+    quiz_page.set_select_field("grademethod", case["grademethod"].strip())
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\pages\add_quiz_page.py", line 233, in set_select_field
+    safe_select(self.browser, *loc, label=raw_spec[6:], timeout=self.timeout)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\core\browser.py", line 176, in safe_select
+    WebDriverWait(browser, timeout, poll_frequency=0.25).until(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        do_select,
+        ^^^^^^^^^^
+        message=f"Cannot select option (value={value!r}, label={label!r}) on ({by}={locator})",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Cannot select option (value=None, label='First grade') on (id=id_grademethod)
+

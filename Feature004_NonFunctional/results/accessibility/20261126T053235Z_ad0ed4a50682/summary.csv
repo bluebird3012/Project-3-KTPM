@@ -1,0 +1,6 @@
+﻿scenario_id,name,kind,verdict,violation_rules,violation_nodes,critical_nodes,serious_nodes,moderate_nodes,minor_nodes,key_label_nodes,color_contrast_nodes,passes_rules,incomplete_rules,detail
+ACC-01,Default Add Quiz Form,axe,PASS,0,0,0,0,0,0,0,0,28,3,0 critical/serious/label/contrast violations
+ACC-02,Expanded Add Quiz Form,axe,FAIL,1,1,1,0,0,0,1,0,32,3,critical=1; key_label_rules=1
+ACC-03,Validation Error State,axe,FAIL,1,1,1,0,0,0,1,0,32,3,critical=1; key_label_rules=1
+ACC-04,Keyboard Tab Navigation,keyboard,PASS,0,0,0,0,0,0,0,0,14,0,Reached 14/14 (100.0%) in 105 tabs; no keyboard trap
+ACC-05,Validation Error ARIA Association,aria_error,FAIL,1,1,0,1,0,0,0,0,2,0,Associated 2/3 (66.67%); missing=['id_timeclose_enabled']

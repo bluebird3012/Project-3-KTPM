@@ -1,0 +1,63 @@
+item_name,item_type,item_value
+BASE_URL,url,http://127.0.0.1:9502
+HOME_PATH,path,/
+LOGIN_PATH,path,/login/index.php
+LOGIN_PREFIX,path,/login
+COURSE_VIEW_PATH_TEMPLATE,path,/course/view.php?id={course_id}
+ADD_QUIZ_PATH_TEMPLATE,path,/course/modedit.php?add=quiz&type&course={course_id}&sectionid={section_id}&return=0&beforemod=0
+EDIT_QUIZ_PATH_TEMPLATE,path,/course/modedit.php?update={cmid}&return=1
+QUIZ_LINK_HREF_TOKEN,token,/mod/quiz/view.php
+QUIZ_INSTANCE_CLASS_TOKEN,token,instancename
+LOGIN_LINK,css,a[href*='/login/index.php']
+LOGIN_USERNAME_INPUT,id,username
+LOGIN_PASSWORD_INPUT,id,password
+LOGIN_BUTTON,id,loginbtn
+LOGIN_ERROR_ALERT,css,"#loginerrormessage, .loginerrors, .alert-danger"
+EXPAND_ALL_LINK,css,form.mform a.collapseexpand
+SHOW_MORE_LINKS,css,form.mform a.moreless-toggler:not(.moreless-less)
+INTRO_EDITOR_IFRAME,css,iframe[id^='id_introeditor'][id$='_ifr']
+INTRO_EDITOR_BODY,css,body[contenteditable='true']
+INTRO_EDITOR_BODY_READ,css,body
+ADD_FEEDBACK_FIELDS_BUTTON,id,id_boundary_add_fields
+SUBMIT_RETURN_BUTTON,id,id_submitbutton2
+SUBMIT_DISPLAY_BUTTON,id,id_submitbutton
+CANCEL_BUTTON,id,id_cancel
+FIELD.name,id,id_name
+FIELD.showdescription,id,id_showdescription
+FIELD.timeopen_enabled,id,id_timeopen_enabled
+FIELD.timeopen_year,id,id_timeopen_year
+FIELD.timeopen_month,id,id_timeopen_month
+FIELD.timeopen_day,id,id_timeopen_day
+FIELD.timeopen_hour,id,id_timeopen_hour
+FIELD.timeopen_minute,id,id_timeopen_minute
+FIELD.timeclose_enabled,id,id_timeclose_enabled
+FIELD.timeclose_year,id,id_timeclose_year
+FIELD.timeclose_month,id,id_timeclose_month
+FIELD.timeclose_day,id,id_timeclose_day
+FIELD.timeclose_hour,id,id_timeclose_hour
+FIELD.timeclose_minute,id,id_timeclose_minute
+FIELD.timelimit_enabled,id,id_timelimit_enabled
+FIELD.timelimit_number,id,id_timelimit_number
+FIELD.timelimit_timeunit,id,id_timelimit_timeunit
+FIELD.overduehandling,id,id_overduehandling
+FIELD.graceperiod_enabled,id,id_graceperiod_enabled
+FIELD.graceperiod_number,id,id_graceperiod_number
+FIELD.graceperiod_timeunit,id,id_graceperiod_timeunit
+FIELD.gradecat,id,id_gradecat
+FIELD.gradepass,id,id_gradepass
+FIELD.attempts,id,id_attempts
+FIELD.grademethod,id,id_grademethod
+FIELD.decimalpoints,id,id_decimalpoints
+FIELD.feedbackboundaries_0,id,id_feedbackboundaries_0
+FIELD.feedbackboundaries_1,css,form.mform input[name='feedbackboundaries[1]']
+VERIFICATION.name_error,id,id_error_name
+VERIFICATION.timeclose_error,css,"#id_error_timeclose, [id^='id_error_timeclose_']"
+VERIFICATION.graceperiod_error,css,"#id_error_graceperiod, [id^='id_error_graceperiod_']"
+VERIFICATION.gradepass_error,id,id_error_gradepass
+VERIFICATION.feedbackboundary_0_error,css,"#id_error_feedbackboundaries_0, [id='id_error_feedbackboundaries[0]'], #id_error_feedbackboundaries"
+VERIFICATION.feedbackboundary_1_error,css,"#id_error_feedbackboundaries_1, [id='id_error_feedbackboundaries[1]'], #id_error_feedbackboundaries1"
+VERIFICATION.course_page_body,css,"body[id^='page-course-view-'], body#page-course-section"
+VERIFICATION.quiz_view_body,css,body#page-mod-quiz-view
+VERIFICATION.quiz_link_xpath,xpath,"//a[contains(@href,{href_token})][normalize-space(.)={quiz_name} or .//span[contains(concat(' ',normalize-space(@class),' '),{instance_class}) and normalize-space(text()[1])={quiz_name}]]"
+VERIFICATION.quiz_view_h1_xpath,xpath,//h1[normalize-space(.)={quiz_name}]
+VERIFICATION.visible_text_xpath,xpath,//*[normalize-space(text())={text}]

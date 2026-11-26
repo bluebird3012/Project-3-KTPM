@@ -1,0 +1,4 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,attempted_quiz_name,created_cmid,screenshot,traceback_file
+TC-004-031,ECP,desc_empty_hide,l2full,PASS,106.071,course_quiz_present_and_reopen,,Created quiz (cmid=71); course_desc=none; Reopen cmid=71 OK (2 checks),tinymce_iframe,f4_031_R01,71,,
+TC-004-032,ECP,desc_filled_show_on_course,l2full,PASS,106.364,course_quiz_present_and_reopen,,Created quiz (cmid=72); course_desc=present; Reopen cmid=72 OK (3 checks),tinymce_iframe,f4_032_R01,72,,
+TC-004-033,ECP,desc_filled_hide_on_course,l2full,PASS,106.737,course_quiz_present_and_reopen,,Created quiz (cmid=73); course_desc=absent; Reopen cmid=73 OK (3 checks),tinymce_iframe,f4_033_R01,73,,

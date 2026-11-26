@@ -1,0 +1,7 @@
+﻿test_case_id,attempted_quiz_name,created_cmid,status,note
+TC-004-027,f4_027_R01,47,PASS,Recorded cmid from Add Quiz run; clean via cleanup.py
+TC-004-028,f4_028_R01,,ERROR,No cmid recorded (error/cancel/not created); verify before deleting
+TC-004-049,f4_049_R01,,PASS,No cmid recorded (error/cancel/not created); verify before deleting
+TC-004-050,f4_050_R01,49,PASS,Recorded cmid from Add Quiz run; clean via cleanup.py
+TC-004-051,f4_051_R01,,PASS,No cmid recorded (error/cancel/not created); verify before deleting
+TC-004-052,f4_052_R01,,PASS,No cmid recorded (error/cancel/not created); verify before deleting

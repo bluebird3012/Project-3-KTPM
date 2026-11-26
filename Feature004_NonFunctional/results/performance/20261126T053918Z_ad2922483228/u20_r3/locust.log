@@ -1,0 +1,936 @@
+[2026-11-26 13:04:55,279] QUANG/INFO/locust.main: Starting Locust 2.47.0
+[2026-11-26 13:04:55,281] QUANG/INFO/locust.main: Run time limit set to 60 seconds
+[2026-11-26 13:04:55,282] QUANG/INFO/locust.runners: Ramping to 20 users at a rate of 20.00 per second
+[2026-11-26 13:04:55,283] QUANG/INFO/locust.runners: All users spawned: {"MoodleQuizCreator": 20} (20 total users)
+[2026-11-26 13:05:54,870] QUANG/INFO/locust.main: --run-time limit reached, shutting down
+[2026-11-26 13:05:55,314] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,321] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,325] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,329] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,333] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,338] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,344] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,350] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:05:55,356] QUANG/ERROR/locust.user.users: 
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 540, in _make_request
+    response = conn.getresponse()
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connection.py", line 638, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 1490, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 350, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\http\client.py", line 306, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Quang\AppData\Local\Python\pythoncore-3.15-64\Lib\socket.py", line 738, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\gevent\_socketcommon.py", line 687, in recv_into
+    self._wait(self._read_event)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "src/gevent/_hub_primitives.py", line 317, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 322, in gevent._gevent_c_hub_primitives.wait_on_socket
+  File "src/gevent/_hub_primitives.py", line 313, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 314, in gevent._gevent_c_hub_primitives._primitive_wait
+  File "src/gevent/_hub_primitives.py", line 55, in gevent._gevent_c_hub_primitives.WaitOperationsGreenlet.wait
+  File "src/gevent/_waiter.py", line 154, in gevent._gevent_c_waiter.Waiter.get
+  File "src/gevent/_greenlet_primitives.py", line 65, in gevent._gevent_c_greenlet_primitives.SwitchOutGreenletWithLoop.switch
+  File "src/gevent/_gevent_c_greenlet_primitives.pxd", line 35, in gevent._gevent_c_greenlet_primitives._greenlet_switch
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 542, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 32, in on_start
+    login(self.client, BASE, ADMIN, PASSWORD)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\core\moodle_client.py", line 84, in login
+    r.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 413, in __exit__
+    self.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 350, in raise_for_status
+    raise self.error
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\clients.py", line 238, in _send_request_safe_mode
+    return super().request(method, url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\.venv\Lib\site-packages\locust\user\users.py", line 166, in run
+    self.on_start()
+    ~~~~~~~~~~~~~^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_NonFunctional\performance\locustfile.py", line 38, in on_start
+    raise StopUser()
+locust.exception.StopUser
+
+[2026-11-26 13:06:23,532] QUANG/INFO/locust.main: Shutting down (exit code 1)
+Type     Name                                                                          # reqs      # fails |    Avg     Min     Max    Med |   req/s  failures/s
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+GET      login_get                                                                         20    9(45.00%) |  51449   41729   60051  60000 |    0.23        0.10
+POST     login_post                                                                        11     0(0.00%) |  34547   28503   38419  35000 |    0.12        0.00
+--------|----------------------------------------------------------------------------|-------|-------------|-------|-------|-------|-------|--------|-----------
+         Aggregated                                                                        31    9(29.03%) |  45451   28503   60051  42000 |    0.35        0.10
+
+Response time percentiles (approximated)
+Type     Name                                                                                  50%    66%    75%    80%    90%    95%    98%    99%  99.9% 99.99%   100% # reqs
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+GET      login_get                                                                           60000  60000  60000  60000  60000  60000  60000  60000  60000  60000  60000     20
+POST     login_post                                                                          35000  35000  35000  35000  38000  38000  38000  38000  38000  38000  38000     11
+--------|--------------------------------------------------------------------------------|--------|------|------|------|------|------|------|------|------|------|------|------
+         Aggregated                                                                          42000  45000  60000  60000  60000  60000  60000  60000  60000  60000  60000     31
+
+Error report
+# occurrences      Error                                                                                               
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+9                  GET login_get: ReadTimeout(ReadTimeoutError("HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"))
+------------------|---------------------------------------------------------------------------------------------------------------------------------------------
+

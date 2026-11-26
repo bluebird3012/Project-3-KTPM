@@ -1,0 +1,4 @@
+﻿test_case_id,attempted_quiz_name,created_cmid,status,note
+TC-004-031,f4_031_R01,16,PASS,Recorded cmid from Add Quiz run; clean via cleanup.py
+TC-004-032,f4_032_R01,17,PASS,Recorded cmid from Add Quiz run; clean via cleanup.py
+TC-004-033,f4_033_R01,18,PASS,Recorded cmid from Add Quiz run; clean via cleanup.py

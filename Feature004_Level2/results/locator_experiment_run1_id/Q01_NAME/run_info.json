@@ -1,0 +1,17 @@
+{
+  "feature": "Feature 004 - Add Quiz",
+  "level": 2,
+  "testing_items_file": "config/testing_items.csv",
+  "testing_items_sha256": "4f1a7dfa9b91227b07a02196c19f181017d11a2b94b441fb05c2eb3f32814dab",
+  "run_id": "exp1id",
+  "base_url": "http://127.0.0.1:9502",
+  "started_utc": "2026-11-25T23:59:43.378219+00:00",
+  "finished_utc": "2026-11-26T00:01:19.156801+00:00",
+  "total": 1,
+  "counts": {
+    "PASS": 1,
+    "FAIL": 0,
+    "ERROR": 0,
+    "SKIP": 0
+  }
+}

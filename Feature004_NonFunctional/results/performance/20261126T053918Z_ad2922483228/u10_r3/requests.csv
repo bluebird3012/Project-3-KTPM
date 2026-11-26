@@ -1,0 +1,9 @@
+﻿quiz_name,status,response_ms,http_ok,db_count,db_exact,error
+nfr4ad2922483228_bd070ad07cdb4155,200,68866.398,True,1,True,
+nfr4ad2922483228_67febdb034d94111,200,65195.012,True,1,True,
+nfr4ad2922483228_36cca7cacb28455b,200,63748.147,True,1,True,
+nfr4ad2922483228_96033072202a4724,200,60848.45,True,1,True,
+nfr4ad2922483228_3e973cbd7a784287,200,31990.936,False,1,True,"quiz_not_confirmed_in_course_view (status=200, url=http://127.0.0.1:9502/course/modedit.php)"
+nfr4ad2922483228_ea28e145b9374ccb,200,62601.047,True,1,True,
+nfr4ad2922483228_4d432da56d274ee3,200,55334.828,True,1,True,
+nfr4ad2922483228_e4f754d67f4d44f3,200,55189.652,True,1,True,

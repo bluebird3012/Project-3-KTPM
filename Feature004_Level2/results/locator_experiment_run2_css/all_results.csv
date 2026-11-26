@@ -1,0 +1,2 @@
+﻿group,test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,attempted_quiz_name,created_cmid,screenshot,traceback_file
+Q01_NAME,TC-004-004,BVA,name_nominal_16,exp2css,PASS,105.028,course_quiz_present,,Created quiz on course page (cmid=64),,f4_004_R01AAAAAA,64,,

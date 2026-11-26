@@ -1,0 +1,10 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,attempted_quiz_name,created_cmid,screenshot,traceback_file
+TC-004-053,DT,dt_rule_R1,l2full,PASS,126.617,course_quiz_present_and_reopen,,Created quiz on course page (cmid=105); Reopen cmid=105 OK (16 checks),,f4_053_R01,105,,
+TC-004-054,DT,dt_rule_R2,l2full,PASS,113.843,course_quiz_present_and_reopen,,Created quiz on course page (cmid=106); Reopen cmid=106 OK (16 checks),,f4_054_R01,106,,
+TC-004-055,DT,dt_rule_R3,l2full,PASS,113.723,course_quiz_present_and_reopen,,Created quiz on course page (cmid=107); Reopen cmid=107 OK (16 checks),,f4_055_R01,107,,
+TC-004-056,DT,dt_rule_R4,l2full,PASS,114.091,course_quiz_present_and_reopen,,Created quiz on course page (cmid=108); Reopen cmid=108 OK (17 checks),,f4_056_R01,108,,
+TC-004-057,DT,dt_rule_R5,l2full,PASS,115.500,course_quiz_present_and_reopen,,Created quiz on course page (cmid=109); Reopen cmid=109 OK (17 checks),,f4_057_R01,109,,
+TC-004-058,DT,dt_rule_R6,l2full,PASS,115.655,course_quiz_present_and_reopen,,Created quiz on course page (cmid=110); Reopen cmid=110 OK (17 checks),,f4_058_R01,110,,
+TC-004-059,DT,dt_rule_R7,l2full,PASS,65.176,field_error,regexp:\S,Validation error observed: timeclose_error='The close date must be after the open date.',,f4_059_R01,,,
+TC-004-060,DT,dt_rule_R8,l2full,PASS,67.161,field_error,regexp:\S,Validation error observed: gradepass_error='The grade to pass can not be greater than the maximum possible grade 10',,f4_060_R01,,,
+TC-004-061,DT,dt_rule_R9,l2full,PASS,69.677,field_error,regexp:\S,Validation error observed: timeclose_error='The close date must be after the open date.'; gradepass_error='The grade to pass can not be greater than the maximum possible grade 10',dual_validation_error,f4_061_R01,,,

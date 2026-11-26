@@ -1,0 +1,4 @@
+﻿field,error_id,error_text,aria_invalid,aria_describedby,error_role,aria_live,linked_by_describedby,associated
+id_name,id_error_name,You must supply a value here.,true,id_error_name,,,True,True
+id_timeclose_enabled,id_error_timeclose,The close date must be after the open date.,,,,,False,False
+id_gradepass,id_error_gradepass,The grade to pass can not be greater than the maximum possible grade 10,,id_error_gradepass,,,True,True

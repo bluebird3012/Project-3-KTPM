@@ -1,0 +1,10 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,attempted_quiz_name,created_cmid,screenshot,traceback_file
+TC-004-001,BVA,name_empty_0,l2full,PASS,30.813,field_error,regexp:\S,Validation error observed: name_error='You must supply a value here.',,,,,
+TC-004-002,BVA,name_min_1,l2full,PASS,129.617,course_quiz_present,,Created quiz on course page (cmid=65),,Q,65,,
+TC-004-003,BVA,name_min_plus_1_2,l2full,PASS,79.953,course_quiz_present,,Created quiz on course page (cmid=66),,Q7,66,,
+TC-004-004,BVA,name_nominal_16,l2full,PASS,93.779,course_quiz_present,,Created quiz on course page (cmid=67),,f4_004_R01AAAAAA,67,,
+TC-004-005,BVA,name_length_255,l2full,PASS,81.893,course_quiz_present,,Created quiz on course page (cmid=68),,f4_005_R01AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA... (len=255),68,,
+TC-004-006,BVA,name_max_1333,l2full,PASS,78.782,course_quiz_present,,Created quiz on course page (cmid=69),,f4_006_R01AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA... (len=1333),69,,
+TC-004-007,BVA,name_max_plus_1_1334,l2full,FAIL,25.298,course_quiz_present,,"AssertionError: Expected quiz creation on course page, but Moodle rejected submission with name_error: Maximum of 1333 characters",maxlength_drift_js_validation,f4_007_R01AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA... (len=1334),,D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\results\run_20261126T000544Z_l2full_3bd33773\Q01_NAME\screenshots\TC-004-007.png,D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\results\run_20261126T000544Z_l2full_3bd33773\Q01_NAME\tracebacks\TC-004-007.txt
+TC-004-029,ECP,name_whitespace_only,l2full,PASS,68.077,field_error,regexp:\S,Validation error observed: name_error='Required',,   ,,,
+TC-004-030,ECP,name_unicode_punctuation,l2full,PASS,88.127,course_quiz_present,,Created quiz on course page (cmid=70),,f4_Ôn tập & kiểm thử (A) #1 R01,70,,

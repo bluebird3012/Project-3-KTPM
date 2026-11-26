@@ -1,0 +1,9 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,attempted_quiz_name,created_cmid,screenshot,traceback_file
+TC-004-062,UC,uc_save_and_return,l1full,PASS,90.891,course_quiz_present,,Created quiz on course page (cmid=56),,f4_062_R01,56,,
+TC-004-063,UC,uc_save_and_display,l1full,PASS,78.249,quiz_view_page,,Opened quiz detail page h1='f4_063_R01' (cmid=57),,f4_063_R01,57,,
+TC-004-064,UC,uc_cancel_create,l1full,PASS,82.546,course_quiz_absent,,Returned to course page; quiz 'f4_064_R01' absent as expected,,f4_064_R01,,,
+TC-004-065,UC,uc_recover_empty_name,l1full,PASS,84.291,recover_then_save,regexp:\S,Validation error observed: name_error='You must supply a value here.' -> Recovered & saved quiz (cmid=58),recovery_flow,f4_065_R01,58,,
+TC-004-066,UC,uc_recover_close_before_open,l1full,PASS,125.603,recover_then_save,regexp:\S,Validation error observed: timeclose_error='The close date must be after the open date.' -> Recovered & saved quiz (cmid=59),recovery_flow,f4_066_R01,59,,
+TC-004-067,UC,uc_recover_gradepass_exceed,l1full,PASS,129.797,recover_then_save,regexp:\S,Validation error observed: gradepass_error='The grade to pass can not be greater than the maximum possible grade 10' -> Recovered & saved quiz (cmid=60),recovery_flow,f4_067_R01,60,,
+TC-004-068,UC,uc_recover_feedback_invalid,l1full,PASS,128.344,recover_then_save,regexp:\S,Validation error observed: feedbackboundary_0_error='Feedback grade boundaries must be between 0% and 100%. The value you entered in boundary 1 is out of range.' -> Recovered & saved quiz (cmid=61),recovery_flow,f4_068_R01,61,,
+TC-004-069,UC,uc_error_then_cancel,l1full,PASS,124.630,error_then_cancel,regexp:\S,Validation error observed: timeclose_error='The close date must be after the open date.' -> Cancelled cleanly; quiz 'f4_069_R01' absent,error_cancel_flow,f4_069_R01,,,

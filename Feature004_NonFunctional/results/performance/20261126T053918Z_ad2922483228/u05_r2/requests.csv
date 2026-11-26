@@ -1,0 +1,6 @@
+﻿quiz_name,status,response_ms,http_ok,db_count,db_exact,error
+nfr4ad2922483228_234e45eb3715473c,200,53300.528,True,1,True,
+nfr4ad2922483228_f545a403173e45b0,200,52333.889,True,1,True,
+nfr4ad2922483228_49ade885248648b8,200,45160.241,True,1,True,
+nfr4ad2922483228_531d7f858abb4e0c,200,45010.759,True,1,True,
+nfr4ad2922483228_576e1b19b6c74c5f,200,48091.479,True,1,True,

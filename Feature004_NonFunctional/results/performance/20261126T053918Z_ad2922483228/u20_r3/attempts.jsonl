@@ -1,0 +1,9 @@
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
+{"event": "setup_error", "stage": "login", "error": "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=9502): Read timed out. (read timeout=60)"}
