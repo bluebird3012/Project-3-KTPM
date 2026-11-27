@@ -1,0 +1,27 @@
+variable,value,meaning
+COURSE_ID,2,id of the course used by the tests (printed by setup/setup_moodle_data.php)
+SECTION,1,section number where the assignment is added
+TEACHER_USER,teacher,editing teacher of the course (actor of Feature 3)
+TEACHER_PASSWORD,teacher,password of the teacher
+STUDENT_USER,student,student of the course (TC-003-055)
+STUDENT_PASSWORD,student,password of the student
+ADMIN_USER,admin,site administrator
+ADMIN_PASSWORD,admin,password of the administrator
+NAME_255,@padto(f3_TC003_002_|A|255),assignment name of exactly 255 characters
+NAME_256,@padto(f3_TC003_003_|A|256),assignment name of exactly 256 characters
+NAME_SPACES,@repeat( |3),three space characters
+ALLOW,2026-12-01 09:00,baseline 'Allow submissions from' (Project 2)
+DUE,2026-12-08 09:00,baseline 'Due date' (Project 2)
+CUTOFF,2026-12-10 09:00,baseline 'Cut-off date' (Project 2)
+MSG_REQUIRED,Required|You must supply a value here,error: name is required
+MSG_BAD_GRADE,Invalid grade value. This must be an integer between 1 and 100,error: maximum grade
+MSG_GRADEPASS_GT,The grade to pass can not be greater than the maximum possible grade,error: grade to pass > maximum grade
+MSG_NUMERIC,You must enter a number here,error: value is not a number
+MSG_DUE,Due date must be after the allow submissions from date,error: due date
+MSG_CUTOFF,Cut-off date cannot be earlier than the due date,error: cut-off date before due date
+MSG_CUTOFF_FROM,Cut-off date cannot be earlier than the allow submissions from date,error: cut-off date before allow from
+MSG_REMIND,Remind me to grade by date cannot be earlier than the due date,error: remind me to grade by
+NAME_1332,@padto(f3_TC003_L1332_|A|1332),assignment name of 1332 characters (real Moodle limit 1333 - 1)
+NAME_1333,@padto(f3_TC003_L1333_|A|1333),assignment name of 1333 characters (real Moodle limit)
+NAME_1334,@padto(f3_TC003_L1334_|A|1334),assignment name of 1334 characters (real Moodle limit + 1)
+MSG_MAXCHARS,Maximum of 1333 characters,error: name longer than 1333 characters

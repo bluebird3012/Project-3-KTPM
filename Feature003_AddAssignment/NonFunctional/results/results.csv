@@ -1,0 +1,14 @@
+﻿time,script,tc_id,title,status,seconds,message
+2026-11-27T00:04:38,TestNfrPerformance,NFR-PERF-01,Add assignment form opens quickly,PASS,67.3,
+2026-11-27T00:05:10,TestNfrPerformance,NFR-PERF-02,Course page (assignment list) opens quickly,PASS,32.0,
+2026-11-27T00:07:24,TestNfrPerformance,NFR-PERF-03,Saving an assignment (name only),PASS,134.1,
+2026-11-27T00:09:14,TestNfrPerformance,NFR-PERF-04,Saving an assignment with all fields,PASS,109.3,
+2026-11-27T00:12:26,TestNfrSecurity,NFR-SEC-01,Stored XSS: script tag in assignment name,PASS,63.9,
+2026-11-27T00:13:14,TestNfrSecurity,NFR-SEC-02,Stored XSS: img onerror in assignment name,PASS,47.5,
+2026-11-27T00:13:59,TestNfrSecurity,NFR-SEC-03,Stored XSS: raw HTML in description,FAIL,44.8,0 != 2 : script / event handler with the payload found on the assignment page
+2026-11-27T00:14:48,TestNfrSecurity,NFR-SEC-04,SQL characters in name are stored literally,PASS,48.8,
+2026-11-27T00:15:21,TestNfrSecurity,NFR-SEC-05,CSRF: form posted with a forged sesskey is refused,PASS,33.4,
+2026-11-27T00:15:39,TestNfrSecurity,NFR-SEC-06,Access control: student cannot open Add assignment,PASS,18.6,
+2026-11-27T00:15:46,TestNfrSecurity,NFR-SEC-07,Access control: not logged in -> login page,PASS,6.9,
+2026-11-27T00:17:07,TestNfrSecurity,NFR-SEC-08,Access control: student cannot edit the teacher's assignment,PASS,80.3,
+2026-11-27T00:19:05,TestNfrSecurity,NFR-SEC-09,Access control: student cannot delete the teacher's assignment,PASS,118.6,

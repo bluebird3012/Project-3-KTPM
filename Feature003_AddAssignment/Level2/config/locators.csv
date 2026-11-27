@@ -1,0 +1,40 @@
+﻿element,by,value,description
+login.username,id,username,Login: username textbox
+login.password,id,password,Login: password textbox
+login.button,id,loginbtn,Login: 'Log in' button
+page.body,tag,body,Any page: body (page text)
+page.heading,css,"h1, h2",Any page: headings (assignment name on its page)
+form.name,id,id_name,Form: 'Assignment name' textbox
+form.expand_all,css,a.collapseexpand,Form: 'Expand all' link (opens the collapsed sections)
+form.description_iframe,id,id_introeditor_ifr,Form: 'Description' TinyMCE editor iframe
+form.description_body,id,tinymce,Form: editable body inside the TinyMCE iframe
+form.description_textarea,id,id_introeditor,Form: 'Description' textarea (when no TinyMCE)
+date.allow_from,id,id_allowsubmissionsfromdate_{part},Form: 'Allow submissions from' - {part} = enabled/day/month/year/hour/minute
+date.due,id,id_duedate_{part},Form: 'Due date' - {part} = enabled/day/month/year/hour/minute
+date.cutoff,id,id_cutoffdate_{part},Form: 'Cut-off date' - {part} = enabled/day/month/year/hour/minute
+date.remind,id,id_gradingduedate_{part},Form: 'Remind me to grade by' - {part} = enabled/day/month/year/hour/minute
+form.onlinetext,id,id_assignsubmission_onlinetext_enabled,Form: 'Online text' checkbox
+form.file,id,id_assignsubmission_file_enabled,Form: 'File submissions' checkbox
+form.wordlimit,id,id_assignsubmission_onlinetext_wordlimit,Form: 'Word limit' textbox
+form.wordlimit_enabled,id,id_assignsubmission_onlinetext_wordlimit_enabled,Form: 'Word limit' Enable checkbox
+form.maxfiles,id,id_assignsubmission_file_maxfiles,Form: 'Maximum number of uploaded files' dropdown
+form.maxsize,id,id_assignsubmission_file_maxsizebytes,Form: 'Maximum submission size' dropdown
+form.grade,id,id_grade_modgrade_point,Form: 'Maximum grade' textbox
+form.gradepass,id,id_gradepass,Form: 'Grade to pass' textbox
+form.sesskey,css,input[name='sesskey'],Form: hidden session key (CSRF token) - security tests
+button.save_return,id,id_submitbutton2,Form: 'Save and return to course' button
+button.save_display,id,id_submitbutton,Form: 'Save and display' button
+button.cancel,id,id_cancel,Form: 'Cancel' button
+error.name,id,id_error_name,Error next to 'Assignment name'
+error.grade,css,"#id_error_grade, #fgroup_id_error_grade, [id^='id_error_grade_modgrade']",Error next to 'Maximum grade'
+error.gradepass,id,id_error_gradepass,Error next to 'Grade to pass'
+error.allow_from,css,"#id_error_allowsubmissionsfromdate, #fgroup_id_error_allowsubmissionsfromdate",Error next to 'Allow submissions from'
+error.due,css,"#id_error_duedate, #fgroup_id_error_duedate",Error next to 'Due date'
+error.cutoff,css,"#id_error_cutoffdate, #fgroup_id_error_cutoffdate",Error next to 'Cut-off date'
+error.remind,css,"#id_error_gradingduedate, #fgroup_id_error_gradingduedate",Error next to 'Remind me to grade by'
+error.wordlimit,css,"#id_error_assignsubmission_onlinetext_wordlimit_group, #fgroup_id_error_assignsubmission_onlinetext_wordlimit_group, #id_error_assignsubmission_onlinetext_wordlimit",Error next to 'Word limit'
+error.any,css,".invalid-feedback, .error",Any error message of the form
+course.activity,css,[data-for='cmitem'],Course page: one element per activity (data-id = course module id)
+course.activity_name,css,[data-activityname],Course page: element holding the activity name (data-activityname)
+course.edit_switch,css,form.editmode-switch-form,Course page: 'Edit mode' switch
+course.add_activity,css,"[data-action='open-chooser'], .section-modchooser-link",Course page: 'Add an activity or resource' button

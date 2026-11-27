@@ -1,0 +1,5 @@
+nfr_id,title,action,runs,avg_limit_s,max_limit_s
+NFR-PERF-01,Add assignment form opens quickly,open_form,5,15,20
+NFR-PERF-02,Course page (assignment list) opens quickly,open_course,5,15,20
+NFR-PERF-03,Saving an assignment (name only),save,5,18,25
+NFR-PERF-04,Saving an assignment with all fields,save_full,3,18,25

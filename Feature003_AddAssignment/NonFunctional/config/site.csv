@@ -1,0 +1,14 @@
+﻿setting,value,description
+BASE_URL,http://127.0.0.1:9502,Base URL of the Moodle site (no trailing slash)
+LOGIN_PAGE,/login/index.php,Login page
+LOGOUT_PAGE,/login/logout.php?sesskey={sesskey},Logout ({sesskey} is filled by the script)
+COURSE_PAGE,/course/view.php?id={course},Course page ({course} = COURSE_ID of data/variables.csv)
+ADD_ASSIGNMENT_PAGE,/course/modedit.php?add=assign&course={course}&section={section}&return=0,"Add an activity > Assignment ({course}, {section})"
+EDIT_ACTIVITY_PAGE,/course/modedit.php?update={cmid},Edit settings of an activity ({cmid})
+DELETE_ACTIVITY_PAGE,/course/mod.php?delete={cmid}&confirm=1&sesskey={sesskey},"Delete an activity - clean-up ({cmid}, {sesskey})"
+ASSIGNMENT_VIEW_PATH,/mod/assign/view.php,URL part of the assignment page (Save and display)
+FORM_PATH,/course/modedit.php,URL part of the add/edit form
+COURSE_PATH,/course/view.php,URL part of the course page
+LOGIN_PATH,/login/index.php,URL part of the login page
+TIMEOUT,60,Seconds to wait for an element
+PAGE_LOAD_TIMEOUT,240,Seconds to wait for a page (the Docker site is slow)

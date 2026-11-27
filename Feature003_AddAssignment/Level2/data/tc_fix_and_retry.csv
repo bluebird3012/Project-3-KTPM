@@ -1,0 +1,7 @@
+﻿tc_id,attempt,title,login_as,name,allow_from,due,cutoff,remind,grade,gradepass,button,expected_outcome,expected_page,expected_error_fields,expected_message,expected_count,verify_settings,cleanup_names
+TC-003-051,1,UC-04 name empty then corrected,,,,,,,,,,error,form,name,{MSG_REQUIRED},,,f3_TC003_051
+TC-003-051,2,UC-04 name empty then corrected,,f3_TC003_051,,,,,,,,success,course,,,1,,
+TC-003-052,1,UC-05 due before allow from then corrected,,f3_TC003_052,2026-12-08 09:00,2026-12-01 09:00,,,,,,error,form,due,{MSG_DUE},,,
+TC-003-052,2,UC-05 due before allow from then corrected,,,,2026-12-15 09:00,,,,,,success,course,,,1,allow_from=2026-12-08 09:00;due=2026-12-15 09:00,
+TC-003-053,1,UC-06 grade to pass > max then corrected,,f3_TC003_053,,,,,80,90,,error,form,gradepass,{MSG_GRADEPASS_GT},,,
+TC-003-053,2,UC-06 grade to pass > max then corrected,,,,,,,,40,,success,course,,,1,grade=80;gradepass=40,

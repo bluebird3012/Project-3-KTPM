@@ -1,0 +1,3 @@
+check_id,tc_id,title,login_as,page,expect_present,expect_absent,expect_text,expect_url_contains
+TC-003-055-1,TC-003-055,"UC-08 student course page: no Edit mode, no Add an activity",student,course,,course.edit_switch;course.add_activity,,/course/view.php
+TC-003-055-2,TC-003-055,UC-08 student opens the Add assignment URL directly,student,add_form,,form.name,do not currently have permissions|permission,

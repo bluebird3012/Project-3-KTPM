@@ -1,0 +1,10 @@
+﻿nfr_id,title,check,login_as,name,payload,expect_text,expect_url_contains,cleanup_names
+NFR-SEC-01,Stored XSS: script tag in assignment name,xss_name,teacher,f3_SEC_01 <script id=f3xss>alert('f3xss')</script>,,,,f3_SEC_01*
+NFR-SEC-02,Stored XSS: img onerror in assignment name,xss_name,teacher,f3_SEC_02 <img src=x id=f3xss onerror=alert('f3xss')>,,,,f3_SEC_02*
+NFR-SEC-03,Stored XSS: raw HTML in description,xss_description,teacher,f3_SEC_03,<p>desc</p><img src=x id=f3xss onerror=alert('f3xss')><script>alert('f3xss')</script>,,,
+NFR-SEC-04,SQL characters in name are stored literally,sql_name,teacher,f3_SEC_04' OR '1'='1'; DROP TABLE mdl_assign; --,,,,f3_SEC_04*
+NFR-SEC-05,CSRF: form posted with a forged sesskey is refused,csrf,teacher,f3_SEC_05,forged123,sesskey|session has most likely timed out|Invalid,,
+NFR-SEC-06,Access control: student cannot open Add assignment,access_add,student,,,do not currently have permissions|permission,,
+NFR-SEC-07,Access control: not logged in -> login page,access_add,guest,,,,/login/index.php,
+NFR-SEC-08,Access control: student cannot edit the teacher's assignment,access_edit,student,f3_SEC_08,,,,
+NFR-SEC-09,Access control: student cannot delete the teacher's assignment,access_delete,student,f3_SEC_09,,,,
