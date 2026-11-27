@@ -1,0 +1,6 @@
+scenario_id,name,kind,description
+ACC-01,Default Add Quiz Form,axe,Scan default collapsed Add a new Quiz page against WCAG 2.1 A/AA rules via axe-core
+ACC-02,Expanded Add Quiz Form,axe,Click Expand all to reveal Timing/Grade/Appearance/Overall feedback then scan via axe-core
+ACC-03,Validation Error State,axe,Submit empty Name + Close<Open + Grade to pass 10.1 to trigger inline validation errors then scan via axe-core
+ACC-04,Keyboard Tab Navigation,keyboard,Traverse expanded Add a new Quiz form via real WebDriver TAB key and verify target controls are reachable without keyboard traps
+ACC-05,Validation Error ARIA Association,aria_error,Verify visible validation errors (#id_error_name #id_error_timeclose #id_error_gradepass) are semantically linked to fields via aria-invalid and aria-describedby or role=alert

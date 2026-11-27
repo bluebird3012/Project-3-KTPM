@@ -1,0 +1,15 @@
+{
+  "feature": "Feature 004 - Add Quiz",
+  "level": 1,
+  "run_id": "l1full",
+  "base_url": "http://127.0.0.1:9502",
+  "started_utc": "2026-11-25T19:02:16.123374+00:00",
+  "finished_utc": "2026-11-25T19:13:33.658494+00:00",
+  "total": 6,
+  "counts": {
+    "PASS": 5,
+    "FAIL": 0,
+    "ERROR": 1,
+    "SKIP": 0
+  }
+}

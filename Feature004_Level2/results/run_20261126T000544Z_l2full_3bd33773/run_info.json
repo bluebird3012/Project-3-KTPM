@@ -1,0 +1,31 @@
+{
+  "feature": "Feature 004 - Add Quiz",
+  "level": 2,
+  "testing_items_file": "config/testing_items.csv",
+  "testing_items_sha256": "4f1a7dfa9b91227b07a02196c19f181017d11a2b94b441fb05c2eb3f32814dab",
+  "run_id": "l2full",
+  "base_url": "http://127.0.0.1:9502",
+  "course_id": 2,
+  "section_id": 2,
+  "started_utc": "2026-11-26T00:05:44.060191+00:00",
+  "finished_utc": "2026-11-26T02:04:12.717555+00:00",
+  "groups": [
+    "Q01_NAME",
+    "Q02_DESC",
+    "Q03_TIMING",
+    "Q04_GRADE_APP",
+    "Q05_FEEDBACK",
+    "Q06_DECISION",
+    "Q07_USECASE"
+  ],
+  "total": 69,
+  "counts": {
+    "PASS": 66,
+    "FAIL": 1,
+    "ERROR": 2,
+    "SKIP": 0
+  },
+  "not_recorded": 0,
+  "complete": true,
+  "exit_code": 1
+}

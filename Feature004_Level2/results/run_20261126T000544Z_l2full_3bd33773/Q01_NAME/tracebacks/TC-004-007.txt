@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\core\runner.py", line 67, in run_suite
+    outcome = execute_case(browser, base_url, case, run_id, args.timeout)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\test_groups\test_name_and_desc.py", line 25, in run_name_case
+    return verify_standard_outcome(
+        browser,
+    ...<5 lines>...
+        absent_name=absent_name,
+    )
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\test_groups\helpers.py", line 136, in verify_standard_outcome
+    raise AssertionError(
+        f"Expected quiz creation on course page, but Moodle rejected submission with {err_detail}"
+    )
+AssertionError: Expected quiz creation on course page, but Moodle rejected submission with name_error: Maximum of 1333 characters

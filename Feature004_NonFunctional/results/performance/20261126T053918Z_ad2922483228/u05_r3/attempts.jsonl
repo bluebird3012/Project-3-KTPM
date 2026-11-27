@@ -1,0 +1,10 @@
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_39f7ed1f41c346be"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_48e225cacf8a4618"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_09ed16a81cbe48b7"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_5618ae1a281947bb"}
+{"event": "attempt", "quiz_name": "nfr4ad2922483228_e351c8f1a9154293"}
+{"event": "result", "quiz_name": "nfr4ad2922483228_39f7ed1f41c346be", "http_ok": true, "status": 200, "response_ms": 44898.222, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_48e225cacf8a4618", "http_ok": true, "status": 200, "response_ms": 44766.718, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_09ed16a81cbe48b7", "http_ok": true, "status": 200, "response_ms": 48224.504, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_5618ae1a281947bb", "http_ok": true, "status": 200, "response_ms": 51809.967, "error": ""}
+{"event": "result", "quiz_name": "nfr4ad2922483228_e351c8f1a9154293", "http_ok": true, "status": 200, "response_ms": 45479.785, "error": ""}

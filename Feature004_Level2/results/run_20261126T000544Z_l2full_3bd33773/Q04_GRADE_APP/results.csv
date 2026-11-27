@@ -1,0 +1,23 @@
+﻿test_case_id,technique,focus,run_id,status,duration_seconds,expected_kind,expected_text,actual_result_or_error,review_tags,attempted_quiz_name,created_cmid,screenshot,traceback_file
+TC-004-015,BVA,gradepass_0,l2full,PASS,113.729,course_quiz_present_and_reopen,,Created quiz on course page (cmid=86); Reopen cmid=86 OK (2 checks),,f4_015_R01,86,,
+TC-004-016,BVA,gradepass_0_1,l2full,PASS,118.699,course_quiz_present_and_reopen,,Created quiz on course page (cmid=87); Reopen cmid=87 OK (2 checks),,f4_016_R01,87,,
+TC-004-017,BVA,gradepass_9_9,l2full,PASS,112.172,course_quiz_present_and_reopen,,Created quiz on course page (cmid=88); Reopen cmid=88 OK (2 checks),,f4_017_R01,88,,
+TC-004-018,BVA,gradepass_10_max,l2full,PASS,111.897,course_quiz_present_and_reopen,,Created quiz on course page (cmid=89); Reopen cmid=89 OK (2 checks),,f4_018_R01,89,,
+TC-004-019,BVA,gradepass_10_1_error,l2full,PASS,63.714,field_error,regexp:\S,Validation error observed: gradepass_error='The grade to pass can not be greater than the maximum possible grade 10',,f4_019_R01,,,
+TC-004-020,BVA,attempts_1,l2full,PASS,117.165,course_quiz_present_and_reopen,,Created quiz on course page (cmid=90); Reopen cmid=90 OK (2 checks),,f4_020_R01,90,,
+TC-004-021,BVA,attempts_2,l2full,PASS,111.159,course_quiz_present_and_reopen,,Created quiz on course page (cmid=91); Reopen cmid=91 OK (2 checks),,f4_021_R01,91,,
+TC-004-022,BVA,attempts_9,l2full,PASS,111.023,course_quiz_present_and_reopen,,Created quiz on course page (cmid=92); Reopen cmid=92 OK (2 checks),,f4_022_R01,92,,
+TC-004-023,BVA,attempts_10,l2full,PASS,111.035,course_quiz_present_and_reopen,,Created quiz on course page (cmid=93); Reopen cmid=93 OK (2 checks),,f4_023_R01,93,,
+TC-004-024,BVA,decimalpoints_0,l2full,PASS,110.065,course_quiz_present_and_reopen,,Created quiz on course page (cmid=94); Reopen cmid=94 OK (2 checks),,f4_024_R01,94,,
+TC-004-025,BVA,decimalpoints_1,l2full,PASS,112.400,course_quiz_present_and_reopen,,Created quiz on course page (cmid=95); Reopen cmid=95 OK (2 checks),,f4_025_R01,95,,
+TC-004-026,BVA,decimalpoints_5,l2full,PASS,113.072,course_quiz_present_and_reopen,,Created quiz on course page (cmid=96); Reopen cmid=96 OK (2 checks),,f4_026_R01,96,,
+TC-004-041,ECP,gradecat_uncategorised,l2full,PASS,112.232,course_quiz_present_and_reopen,,Created quiz on course page (cmid=97); Reopen cmid=97 OK (2 checks),,f4_041_R01,97,,
+TC-004-042,ECP,gradepass_empty,l2full,PASS,84.815,course_quiz_present,,Created quiz on course page (cmid=98),,f4_042_R01,98,,
+TC-004-043,ECP,gradepass_non_numeric_error,l2full,PASS,61.663,field_error,regexp:\S,Validation error observed: gradepass_error='You must enter a number here.',,f4_043_R01,,,
+TC-004-044,ECP,attempts_unlimited,l2full,PASS,117.508,course_quiz_present_and_reopen,,Created quiz on course page (cmid=99); Reopen cmid=99 OK (2 checks),,f4_044_R01,99,,
+TC-004-045,ECP,grademethod_highest,l2full,PASS,112.052,course_quiz_present_and_reopen,,Created quiz on course page (cmid=100); Reopen cmid=100 OK (3 checks),,f4_045_R01,100,,
+TC-004-046,ECP,grademethod_average,l2full,PASS,111.978,course_quiz_present_and_reopen,,Created quiz on course page (cmid=101); Reopen cmid=101 OK (3 checks),,f4_046_R01,101,,
+TC-004-047,ECP,grademethod_first,l2full,ERROR,121.303,course_quiz_present_and_reopen,,"TimeoutException: Message: Cannot select option (value=None, label='First grade') on (id=id_grademethod)
+",,f4_047_R01,,D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\results\run_20261126T000544Z_l2full_3bd33773\Q04_GRADE_APP\screenshots\TC-004-047.png,D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\results\run_20261126T000544Z_l2full_3bd33773\Q04_GRADE_APP\tracebacks\TC-004-047.txt
+TC-004-048,ECP,grademethod_last,l2full,ERROR,117.378,course_quiz_present_and_reopen,,"TimeoutException: Message: Cannot select option (value=None, label='Last grade') on (id=id_grademethod)
+",,f4_048_R01,,D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\results\run_20261126T000544Z_l2full_3bd33773\Q04_GRADE_APP\screenshots\TC-004-048.png,D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level2\results\run_20261126T000544Z_l2full_3bd33773\Q04_GRADE_APP\tracebacks\TC-004-048.txt

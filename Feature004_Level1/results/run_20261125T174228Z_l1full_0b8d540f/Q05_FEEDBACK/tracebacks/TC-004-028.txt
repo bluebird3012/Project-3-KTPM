@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level1\core\runner.py", line 67, in run_suite
+    outcome = execute_case(browser, base_url, case, run_id, args.timeout)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level1\test_groups\test_timing_and_grade.py", line 70, in run_feedback_case
+    return verify_standard_outcome(browser, quiz_page, course_page, case, timeout)
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level1\test_groups\helpers.py", line 136, in verify_standard_outcome
+    state, err_detail = wait_course_or_validation_error(browser, quiz_page, course_page, timeout)
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level1\test_groups\helpers.py", line 111, in wait_course_or_validation_error
+    return WebDriverWait(browser, timeout, poll_frequency=0.25).until(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        probe,
+        ^^^^^^
+        message="Timed out waiting for course page redirect or form validation error",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\BachKhoa\KTPM\Project3_Feature004_Workspace\Feature004_Level1\.venv\Lib\site-packages\selenium\webdriver\support\wait.py", line 121, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: Timed out waiting for course page redirect or form validation error
+

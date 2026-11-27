@@ -1,0 +1,28 @@
+{
+  "feature": "Feature 004 - Add Quiz",
+  "kind": "accessibility",
+  "base": "http://127.0.0.1:9502",
+  "prefix": "nfr4ad0ed4a50682_",
+  "started_at": "2026-11-26T05:32:35.601112+00:00",
+  "nfr_id": "NFR-08",
+  "smoke": false,
+  "course_id": 2,
+  "section_id": 2,
+  "axe_version": "4.10.2",
+  "axe_sha256": "b511cd9dec01c76f4b2ad1723b66b6db37d4c2eb4ed199076e1829d9ee7b75e3",
+  "criteria": {
+    "critical_violations_max": 0,
+    "serious_violations_max": 0,
+    "key_label_name_violations_max": 0,
+    "color_contrast_violations_max": 0,
+    "keyboard_targets_reachable_pct_min": 100.0,
+    "keyboard_traps_max": 0,
+    "error_association_pct_min": 100.0
+  },
+  "complete": true,
+  "finished_at": "2026-11-26T05:38:36.957023+00:00",
+  "verdict": "FAIL",
+  "scenarios_run": 5,
+  "passed_scenarios": 2,
+  "failed_scenarios": 3
+}

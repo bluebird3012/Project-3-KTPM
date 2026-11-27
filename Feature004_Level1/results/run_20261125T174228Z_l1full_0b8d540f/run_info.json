@@ -1,0 +1,29 @@
+{
+  "feature": "Feature 004 - Add Quiz",
+  "level": 1,
+  "run_id": "l1full",
+  "base_url": "http://127.0.0.1:9502",
+  "course_id": 2,
+  "section_id": 2,
+  "started_utc": "2026-11-25T17:42:28.606964+00:00",
+  "finished_utc": "2026-11-25T19:42:40.908318+00:00",
+  "groups": [
+    "Q01_NAME",
+    "Q02_DESC",
+    "Q03_TIMING",
+    "Q04_GRADE_APP",
+    "Q05_FEEDBACK",
+    "Q06_DECISION",
+    "Q07_USECASE"
+  ],
+  "total": 69,
+  "counts": {
+    "PASS": 62,
+    "FAIL": 1,
+    "ERROR": 6,
+    "SKIP": 0
+  },
+  "not_recorded": 0,
+  "complete": true,
+  "exit_code": 1
+}
